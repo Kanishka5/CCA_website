@@ -1,0 +1,148 @@
+@font-face {
+	font-family: 'Avenir';
+	src: url(../fonts/AvenirLTStd-Book.otf);
+}
+/* members */
+.heading {
+    font-family: Avenir;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.heading.member{
+    margin-bottom: 80px;
+    margin-top: 144px;
+}
+
+.heading.member h1{
+    font-weight: 900;
+}
+
+.heading.faculty{
+    margin-top: 211px;
+    margin-bottom: 40px;
+}
+
+.heading.faculty h1{
+    font-weight: 900;
+}
+
+.membercard{
+    height: 414px;
+    width: 275px;
+    border: solid 1px #979797;
+    background-color: #d8d8d8;
+    margin-bottom: 120px;
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.membercard figure{
+    position: relative;
+    color: #000000;
+}
+
+.membercard figure img{
+    position: absolute;
+    width: 100%;
+}
+
+.membercard figure svg{
+    position: absolute;
+}
+
+.membercard figure h1{
+    position: absolute;
+    font-size: 34px;
+    bottom: -1px;
+    transition:transform 1s;
+}
+
+.membercard figure p{
+    bottom: -37px;
+    position: absolute;
+    transition:transform 1s;
+}
+
+.membercard figcaption{
+    position: relative;
+    height: 414px;
+    transition-duration: 0.5s;
+}
+
+.membercard figcaption:hover{
+	transform: translateY(-65px);
+}
+
+.membercard figure svg path{
+    fill: #fff;
+}
+
+#facpara{
+    font-size: 26px;
+    margin-bottom: 80px;
+}
+
+/* navbar */
+  
+.sidebar p {
+    color: black;
+    float: right;
+    line-height: 60px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  
+.sidebar a {
+      text-decoration: none;
+      color: black;
+  }
+  
+.sidebar a:hover {
+       color: rgb(8, 62, 240);
+  }
+.sidebar {
+    font-family: Avenir,sans-serif;
+        height: 100vh;
+      font-size: 14px;
+      background-color: #f1f1f1;
+      background: #f6f6f6;
+      width: 100vh;
+      height: 60px;
+      transform-origin: top left;
+      position: fixed;
+      left: 0;
+      top: 100%;
+      transform: rotate(-90deg);
+  }
+  .bot{
+        position: relative;
+        left: 30px;
+        font-size: 20px;
+    }
+
+
+
+@media screen and (max-width: 600px){
+
+    .heading.member{
+        margin-bottom: 80px;
+        margin-top: 10px;
+    }
+    
+    .heading.faculty{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .sidebar{
+        display: none;
+    }
+
+}
