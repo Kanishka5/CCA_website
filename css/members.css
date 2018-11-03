@@ -140,9 +140,22 @@
         margin-top: 20px;
         margin-bottom: 40px;
     }
+
+    .membercard{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .no-gutter > [class*='col-'] {
+        padding-right:0;
+        padding-left:0;
+    }
+
+    /* sidebar */
     
     .sidebar{
         display: none;
     }
+
 
 }
