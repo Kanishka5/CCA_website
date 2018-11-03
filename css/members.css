@@ -129,8 +129,7 @@
 .sidebar {
     font-family: Avenir,sans-serif;
       font-size: 14px;
-      background-color: #f1f1f1;
-      background: #f6f6f6;
+      background: #d8d8d8;
       width: 100vh;
       height: 72px;
       transform-origin: top left;
@@ -150,6 +149,18 @@
     }
 
 /* logos */
+
+.cca{
+    position: absolute;
+    left: 12%;
+    top: 2%;
+}
+
+.cca img{
+    height: 50px;
+    width: 50px;
+}
+
 .arhn {
     position: absolute;
     right: 5.5%;
@@ -276,7 +287,7 @@
 
 @media screen and (max-width: 600px){
     /* logo */
-    .arhn{
+    .arhn,.cca{
         display: none;
     }
 
