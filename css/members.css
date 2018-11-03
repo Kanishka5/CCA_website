@@ -125,6 +125,7 @@
   
 .sidebar a:hover {
        color: rgb(8, 62, 240);
+       text-decoration: none;
   }
 .sidebar {
     font-family: Avenir,sans-serif;
@@ -281,7 +282,6 @@
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
-
 
 
 
