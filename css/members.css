@@ -40,6 +40,8 @@
     margin-bottom: 120px;
     margin-left: 12px;
     overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 9px 9px 13px 3px grey;
 }
 
 .membercard figure{
@@ -127,9 +129,46 @@
         font-size: 20px;
     }
 
+/* logos */
+.arhn {
+    position: absolute;
+    right: 5.5%;
+    top:2.9%;
+    width: 294px;
+    height: 48px;
+    border-radius: 28px;
+    background-color: #d8d8d8;
+  }
+
+  .arhn p{
+      margin-top: 0;
+  }
+
+.arhn img{
+    width: 83px;
+    height: 83px;
+}
+
+.arhn p{
+    width: 179px;
+    height: 27px;
+    font-family: Avenir;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 
 
 @media screen and (max-width: 600px){
+    /* logo */
+    .arhn{
+        display: none;
+    }
 
     .heading.member{
         margin-bottom: 80px;
