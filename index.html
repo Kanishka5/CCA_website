@@ -23,16 +23,28 @@
           let cells = document.getElementById('cells');
           let member = document.getElementById('team');
           let contact = document.getElementById('contact');
+          let nav = document.querySelector('.overlay-menu');
+          let toggleIcon = document.querySelector('.menuIcon');
           about.style.display="block";
           arhn.style.display="none";
           cells.style.display="none";  
           member.style.display="none";
           contact.style.display="none";
+          nav.style.transform = 'translateX(-100%)';
+		  nav.style.transition = 'transform 0.2s ease-out';
           loader.show();
 							// after some time hide loader
 							setTimeout( function() {
 								loader.hide();
-							}, 1000 );
+                            }, 1000 );
+        
+            toggleIcon.addEventListener('click', () => {
+                if (toggleIcon.className != 'menuIcon toggle') {
+                    toggleIcon.className += ' toggle';
+                } else {
+                    toggleIcon.className = 'menuIcon';
+                }
+            });
         };
 
         function arhn() {
@@ -42,16 +54,28 @@
           let cells = document.getElementById('cells');
           let member = document.getElementById('team');
           let contact = document.getElementById('contact');
+          let nav = document.querySelector('.overlay-menu');
+          let toggleIcon = document.querySelector('.menuIcon');
           about.style.display="none";
           arhn.style.display="block";
           cells.style.display="none";  
           member.style.display="none";
           contact.style.display="none";
+          nav.style.transform = 'translateX(-100%)';
+		  nav.style.transition = 'transform 0.2s ease-out';
           loader.show();
 							// after some time hide loader
 							setTimeout( function() {
 								loader.hide();
-							}, 1000 );
+                            }, 1000 );
+        
+            toggleIcon.addEventListener('click', () => {
+	if (toggleIcon.className != 'menuIcon toggle') {
+		toggleIcon.className += ' toggle';
+	} else {
+		toggleIcon.className = 'menuIcon';
+	}
+});
         };
 
         function cells() {
@@ -61,16 +85,28 @@
           let cells = document.getElementById('cells');
           let member = document.getElementById('team');
           let contact = document.getElementById('contact');
+          let nav = document.querySelector('.overlay-menu');
+          let toggleIcon = document.querySelector('.menuIcon');
           about.style.display="none";
           arhn.style.display="none";
           cells.style.display="block";  
           member.style.display="none";
           contact.style.display="none";
+          		nav.style.transform = 'translateX(-100%)';
+		nav.style.transition = 'transform 0.2s ease-out';
           loader.show();
 							// after some time hide loader
 							setTimeout( function() {
 								loader.hide();
-							}, 1000 );
+                            }, 1000 );
+        
+            toggleIcon.addEventListener('click', () => {
+	if (toggleIcon.className != 'menuIcon toggle') {
+		toggleIcon.className += ' toggle';
+	} else {
+		toggleIcon.className = 'menuIcon';
+	}
+});
         };
 
         function members() {
@@ -80,16 +116,28 @@
           let cells = document.getElementById('cells');
           let member = document.getElementById('team');
           let contact = document.getElementById('contact');
+          let nav = document.querySelector('.overlay-menu');
+          let toggleIcon = document.querySelector('.menuIcon');
           about.style.display="none";
           arhn.style.display="none";
           cells.style.display="none";  
           member.style.display="block";
           contact.style.display="none";
+          		nav.style.transform = 'translateX(-100%)';
+		nav.style.transition = 'transform 0.2s ease-out';
           loader.show();
 							// after some time hide loader
 							setTimeout( function() {
 								loader.hide();
-							}, 1000 );
+                            }, 1000 );
+        
+            toggleIcon.addEventListener('click', () => {
+	if (toggleIcon.className != 'menuIcon toggle') {
+		toggleIcon.className += ' toggle';
+	} else {
+		toggleIcon.className = 'menuIcon';
+	}
+});
         };
 
         function contact() {
@@ -99,6 +147,8 @@
           let cells = document.getElementById('cells');
           let member = document.getElementById('team');
           let contact = document.getElementById('contact');
+          let nav = document.querySelector('.overlay-menu');
+          let toggleIcon = document.querySelector('.menuIcon');
           about.style.display="none";
           arhn.style.display="none";
           cells.style.display="none";  
@@ -108,7 +158,15 @@
 							// after some time hide loader
 							setTimeout( function() {
 								loader.hide();
-							}, 1000 );
+                            }, 1000 );
+        
+            toggleIcon.addEventListener('click', () => {
+	if (toggleIcon.className != 'menuIcon toggle') {
+		toggleIcon.className += ' toggle';
+	} else {
+		toggleIcon.className = 'menuIcon';
+	}
+});
         };
     </script>
     <!-- path of transition -->
@@ -119,6 +177,24 @@
 			</div>
 
     <!-- sidebar -->
+
+            <!-- Menu Icon -->
+            <div class="menuIcon">
+                <span class="icon icon-bars"></span>
+                <span class="icon icon-bars overlay"></span>
+            </div>
+            <!-- mobile menu -->
+            <div class="overlay-menu">
+                <ul id="menu">
+                    <li><a href="#" onclick="abt()"> ABOUT </a></li>
+                    <li><a href="#" onclick="arhn()"> AAROHAN </a></li>
+                    <li><a href="#" onclick="cells()"> CELLS </a></li>
+                    <li><a href="#" onclick="members()"> MEMBERS </a></li>
+                    <li><a href="#" onclick="contact()"> CONTACT US </a></li>
+                  </ul>
+              </div>
+
+
             <div class="sidebar">
                 <p><i class="fa fa-align-left" style="font-size:20px;transform: rotate(90deg)"></i></p>
               <p><a href="#" onclick="abt()"> ABOUT </a></p>
