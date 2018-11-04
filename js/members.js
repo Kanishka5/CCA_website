@@ -51,3 +51,126 @@ toggleIcon.addEventListener('click', () => {
 		toggleIcon.className = 'menuIcon';
 	}
 });
+
+
+//onclick functions
+
+function abt() {
+	loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
+	let about = document.getElementById('about');
+	let arhn = document.getElementById('arhn');
+	let cells = document.getElementById('cells');
+	let member = document.getElementById('team');
+	let contact = document.getElementById('contact');
+	let nav = document.querySelector('.overlay-menu');
+	let toggleIcon = document.querySelector('.menuIcon');
+	about.style.display="block";
+	arhn.style.display="none";
+	cells.style.display="none";  
+	member.style.display="none";
+	contact.style.display="none";
+	toggleIcon.className = 'menuIcon';
+	nav.style.transform = 'translateX(-100%)';
+	nav.style.transition = 'transform 0.2s ease-out';
+	loader.show();
+					  // after some time hide loader
+					  setTimeout( function() {
+						  loader.hide();
+					  }, 1000 );
+  };
+
+  function arhn() {
+	loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
+	let about = document.getElementById('about');
+	let arhn = document.getElementById('arhn');
+	let cells = document.getElementById('cells');
+	let member = document.getElementById('team');
+	let contact = document.getElementById('contact');
+	let nav = document.querySelector('.overlay-menu');
+	let toggleIcon = document.querySelector('.menuIcon');
+	about.style.display="none";
+	arhn.style.display="block";
+	cells.style.display="none";  
+	member.style.display="none";
+	contact.style.display="none";
+	toggleIcon.className = 'menuIcon';
+	nav.style.transform = 'translateX(-100%)';
+	nav.style.transition = 'transform 0.2s ease-out';
+	loader.show();
+					  // after some time hide loader
+					  setTimeout( function() {
+						  loader.hide();
+					  }, 1000 );
+  };
+
+  function cells() {
+	loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
+	let about = document.getElementById('about');
+	let arhn = document.getElementById('arhn');
+	let cells = document.getElementById('cells');
+	let member = document.getElementById('team');
+	let contact = document.getElementById('contact');
+	let nav = document.querySelector('.overlay-menu');
+	let toggleIcon = document.querySelector('.menuIcon');
+	about.style.display="none";
+	arhn.style.display="none";
+	cells.style.display="block";  
+	member.style.display="none";
+	contact.style.display="none";
+	toggleIcon.className = 'menuIcon';
+			nav.style.transform = 'translateX(-100%)';
+  nav.style.transition = 'transform 0.2s ease-out';
+	loader.show();
+					  // after some time hide loader
+					  setTimeout( function() {
+						  loader.hide();
+					  }, 1000 );
+  };
+
+  function members() {
+	loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
+	let about = document.getElementById('about');
+	let arhn = document.getElementById('arhn');
+	let cells = document.getElementById('cells');
+	let member = document.getElementById('team');
+	let contact = document.getElementById('contact');
+	let nav = document.querySelector('.overlay-menu');
+	let toggleIcon = document.querySelector('.menuIcon');
+	about.style.display="none";
+	arhn.style.display="none";
+	cells.style.display="none";  
+	member.style.display="block";
+	contact.style.display="none";
+	toggleIcon.className = 'menuIcon';
+  nav.style.transform = 'translateX(-100%)';
+  nav.style.transition = 'transform 0.2s ease-out';
+	loader.show();
+					  // after some time hide loader
+					  setTimeout( function() {
+						  loader.hide();
+					  }, 1000 );
+  };
+
+  function contact() {
+	loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
+	let about = document.getElementById('about');
+	let arhn = document.getElementById('arhn');
+	let cells = document.getElementById('cells');
+	let member = document.getElementById('team');
+	let contact = document.getElementById('contact');
+	let nav = document.querySelector('.overlay-menu');
+	let toggleIcon = document.querySelector('.menuIcon');
+	about.style.display="none";
+	arhn.style.display="none";
+	cells.style.display="none";  
+	member.style.display="none";
+	contact.style.display="block";
+	toggleIcon.className = 'menuIcon';
+	nav.style.transform = 'translateX(-100%)';
+	nav.style.transition = 'transform 0.2s ease-out';
+	loader.show();
+					  // after some time hide loader
+					  setTimeout( function() {
+						  loader.hide();
+					  }, 1000 );
+  };

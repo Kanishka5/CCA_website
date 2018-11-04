@@ -4,138 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/ccalogo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/members.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
-    <title>Members</title>
+    <title>CCA | Center For Cognitive Activities</title>
 </head>
 <body>
 
     <!-- onclick page change -->
     <script src="js/classie.js"></script>
     <script src="js/svgLoader.js"></script>
-    <script>
-        function abt() {
-          loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
-          let about = document.getElementById('about');
-          let arhn = document.getElementById('arhn');
-          let cells = document.getElementById('cells');
-          let member = document.getElementById('team');
-          let contact = document.getElementById('contact');
-          let nav = document.querySelector('.overlay-menu');
-          let toggleIcon = document.querySelector('.menuIcon');
-          about.style.display="block";
-          arhn.style.display="none";
-          cells.style.display="none";  
-          member.style.display="none";
-          contact.style.display="none";
-          toggleIcon.className = 'menuIcon';
-          nav.style.transform = 'translateX(-100%)';
-		  nav.style.transition = 'transform 0.2s ease-out';
-          loader.show();
-							// after some time hide loader
-							setTimeout( function() {
-								loader.hide();
-                            }, 1000 );
-        };
 
-        function arhn() {
-          loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
-          let about = document.getElementById('about');
-          let arhn = document.getElementById('arhn');
-          let cells = document.getElementById('cells');
-          let member = document.getElementById('team');
-          let contact = document.getElementById('contact');
-          let nav = document.querySelector('.overlay-menu');
-          let toggleIcon = document.querySelector('.menuIcon');
-          about.style.display="none";
-          arhn.style.display="block";
-          cells.style.display="none";  
-          member.style.display="none";
-          contact.style.display="none";
-          toggleIcon.className = 'menuIcon';
-          nav.style.transform = 'translateX(-100%)';
-		  nav.style.transition = 'transform 0.2s ease-out';
-          loader.show();
-							// after some time hide loader
-							setTimeout( function() {
-								loader.hide();
-                            }, 1000 );
-        };
-
-        function cells() {
-          loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
-          let about = document.getElementById('about');
-          let arhn = document.getElementById('arhn');
-          let cells = document.getElementById('cells');
-          let member = document.getElementById('team');
-          let contact = document.getElementById('contact');
-          let nav = document.querySelector('.overlay-menu');
-          let toggleIcon = document.querySelector('.menuIcon');
-          about.style.display="none";
-          arhn.style.display="none";
-          cells.style.display="block";  
-          member.style.display="none";
-          contact.style.display="none";
-          toggleIcon.className = 'menuIcon';
-          		nav.style.transform = 'translateX(-100%)';
-		nav.style.transition = 'transform 0.2s ease-out';
-          loader.show();
-							// after some time hide loader
-							setTimeout( function() {
-								loader.hide();
-                            }, 1000 );
-        };
-
-        function members() {
-          loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
-          let about = document.getElementById('about');
-          let arhn = document.getElementById('arhn');
-          let cells = document.getElementById('cells');
-          let member = document.getElementById('team');
-          let contact = document.getElementById('contact');
-          let nav = document.querySelector('.overlay-menu');
-          let toggleIcon = document.querySelector('.menuIcon');
-          about.style.display="none";
-          arhn.style.display="none";
-          cells.style.display="none";  
-          member.style.display="block";
-          contact.style.display="none";
-          toggleIcon.className = 'menuIcon';
-        nav.style.transform = 'translateX(-100%)';
-		nav.style.transition = 'transform 0.2s ease-out';
-          loader.show();
-							// after some time hide loader
-							setTimeout( function() {
-								loader.hide();
-                            }, 1000 );
-        };
-
-        function contact() {
-          loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
-          let about = document.getElementById('about');
-          let arhn = document.getElementById('arhn');
-          let cells = document.getElementById('cells');
-          let member = document.getElementById('team');
-          let contact = document.getElementById('contact');
-          let nav = document.querySelector('.overlay-menu');
-          let toggleIcon = document.querySelector('.menuIcon');
-          about.style.display="none";
-          arhn.style.display="none";
-          cells.style.display="none";  
-          member.style.display="none";
-          contact.style.display="block";
-          toggleIcon.className = 'menuIcon';
-          nav.style.transform = 'translateX(-100%)';
-		  nav.style.transition = 'transform 0.2s ease-out';
-          loader.show();
-							// after some time hide loader
-							setTimeout( function() {
-								loader.hide();
-                            }, 1000 );
-        };
-    </script>
     <!-- path of transition -->
             <div id="loader" class="pageload-overlay" data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z">
 				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="xMidYMid slice">
@@ -230,7 +111,20 @@
 
     <!-- about -->
     <div id="about">
-        <h1>About</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="brk-img-double-wide">
+                        <div class="brk-img-double-wide__container"><img src="https://www.ccanitd.in/images/Aaryan.jpg" class="lazyload"/></div>
+                        <div class="brk-img-double-wide__container"><img src="https://www.ccanitd.in/images/Aaryan.jpg" class="lazyload"/></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                        <h1>About CCA!</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- arhn -->
