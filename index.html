@@ -30,6 +30,7 @@
           cells.style.display="none";  
           member.style.display="none";
           contact.style.display="none";
+          toggleIcon.className = 'menuIcon';
           nav.style.transform = 'translateX(-100%)';
 		  nav.style.transition = 'transform 0.2s ease-out';
           loader.show();
@@ -37,14 +38,6 @@
 							setTimeout( function() {
 								loader.hide();
                             }, 1000 );
-        
-            toggleIcon.addEventListener('click', () => {
-                if (toggleIcon.className != 'menuIcon toggle') {
-                    toggleIcon.className += ' toggle';
-                } else {
-                    toggleIcon.className = 'menuIcon';
-                }
-            });
         };
 
         function arhn() {
@@ -68,14 +61,6 @@
 							setTimeout( function() {
 								loader.hide();
                             }, 1000 );
-        
-            toggleIcon.addEventListener('click', () => {
-	if (toggleIcon.className != 'menuIcon toggle') {
-		toggleIcon.className += ' toggle';
-	} else {
-		toggleIcon.className = 'menuIcon';
-	}
-});
         };
 
         function cells() {
@@ -92,6 +77,7 @@
           cells.style.display="block";  
           member.style.display="none";
           contact.style.display="none";
+          toggleIcon.className = 'menuIcon';
           		nav.style.transform = 'translateX(-100%)';
 		nav.style.transition = 'transform 0.2s ease-out';
           loader.show();
@@ -99,14 +85,6 @@
 							setTimeout( function() {
 								loader.hide();
                             }, 1000 );
-        
-            toggleIcon.addEventListener('click', () => {
-	if (toggleIcon.className != 'menuIcon toggle') {
-		toggleIcon.className += ' toggle';
-	} else {
-		toggleIcon.className = 'menuIcon';
-	}
-});
         };
 
         function members() {
@@ -123,21 +101,14 @@
           cells.style.display="none";  
           member.style.display="block";
           contact.style.display="none";
-          		nav.style.transform = 'translateX(-100%)';
+          toggleIcon.className = 'menuIcon';
+        nav.style.transform = 'translateX(-100%)';
 		nav.style.transition = 'transform 0.2s ease-out';
           loader.show();
 							// after some time hide loader
 							setTimeout( function() {
 								loader.hide();
                             }, 1000 );
-        
-            toggleIcon.addEventListener('click', () => {
-	if (toggleIcon.className != 'menuIcon toggle') {
-		toggleIcon.className += ' toggle';
-	} else {
-		toggleIcon.className = 'menuIcon';
-	}
-});
         };
 
         function contact() {
@@ -154,19 +125,12 @@
           cells.style.display="none";  
           member.style.display="none";
           contact.style.display="block";
+          toggleIcon.className = 'menuIcon';
           loader.show();
 							// after some time hide loader
 							setTimeout( function() {
 								loader.hide();
                             }, 1000 );
-        
-            toggleIcon.addEventListener('click', () => {
-	if (toggleIcon.className != 'menuIcon toggle') {
-		toggleIcon.className += ' toggle';
-	} else {
-		toggleIcon.className = 'menuIcon';
-	}
-});
         };
     </script>
     <!-- path of transition -->
