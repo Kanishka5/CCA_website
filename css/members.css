@@ -18,6 +18,22 @@
     display: none;
 }
 
+/* contact */
+#contact h1{
+    margin-top: 12.3%;
+    margin-left: 12.2%;
+    font-size: 43px;
+    font-weight: 900;
+}
+
+#contact p{
+    margin-left: 12.2%;
+    width: 67%;
+    margin-top: 3.2%;
+    font-family: Avenir;
+    font-size: 26px;
+}
+
 /* members */
 .heading {
     font-family: Avenir;
@@ -281,7 +297,12 @@
   /*======================================================
                      Responsive Mobile Menu 
     ======================================================*/
-  .overlay-menu {
+    #menu p{
+        float: right;
+        padding-left: 15px;
+    }
+  
+    .overlay-menu {
     background: lightblue;
     color: rgb(13, 26, 38);
     display: flex;
@@ -508,5 +529,24 @@
         display: none;
     }
 
+    /* contact */
+    #contact{
+        text-align: center;
+    }
+    
+    #contact p{
+        margin-left: 0;
+        width: auto;
+        margin-top: 3.2%;
+        font-family: Avenir;
+        font-size: 20px;
+    }
+
+    #contact h1{
+        margin-top: 10vh;
+        margin-left: 0;
+        font-size: 40px;
+        font-weight: 900;
+    }
 
 }

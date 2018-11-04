@@ -127,6 +127,8 @@
           member.style.display="none";
           contact.style.display="block";
           toggleIcon.className = 'menuIcon';
+          nav.style.transform = 'translateX(-100%)';
+		  nav.style.transition = 'transform 0.2s ease-out';
           loader.show();
 							// after some time hide loader
 							setTimeout( function() {
@@ -156,6 +158,28 @@
                     <li><a href="#" onclick="cells()"> CELLS </a></li>
                     <li><a href="#" onclick="members()"> MEMBERS </a></li>
                     <li><a href="#" onclick="contact()"> CONTACT US </a></li>
+                    <li>
+                        <p>
+                            <a href="https://www.facebook.com/arhn.nitd/">
+                                  <i class="fa fa-facebook-square" style="font-size:20px"></i>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/user/arhnNITD">
+                                  <i class="fa fa-youtube" style="font-size:20px"></i>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/arhn.nitd/">
+                                  <i class="fa fa-instagram" style="font-size:20px"></i>
+                            </a>
+                        </p>
+                        <p>
+                              <a href="https://twitter.com/aarohan_nitdgp">
+                                    <i class="fa fa-twitter" style="font-size:20px"></i>
+                              </a>
+                       </p>
+                    </li>
                   </ul>
               </div>
 
@@ -522,7 +546,10 @@
 
     <!-- contact us -->
     <div id="contact">
-        <h1>Contact Us</h1>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
     </div>
 
     <script src="js/members.js"></script>
