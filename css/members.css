@@ -648,8 +648,13 @@
     /* about */
     #about{
         text-align: center;
+        margin-top: 0;
     }
 
+    #about h1{
+        margin-top: 50px;
+    }
+    
     #about p{
         font-size: 20px;
     }
