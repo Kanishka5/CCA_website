@@ -3,6 +3,11 @@
 	src: url(../fonts/AvenirLTStd-Book.otf);
 }
 
+@font-face{
+    font-family: 'Avenir-Black';
+    src: url(../fonts/Avenir\ LT\ 95\ Black.ttf);
+}
+
 /* about */
 #about{
     display: none;
@@ -24,6 +29,7 @@
     margin-left: 12.2%;
     font-size: 43px;
     font-weight: 900;
+    font-family: Avenir-Black;
 }
 
 #contact p{
@@ -533,7 +539,7 @@
     #contact{
         text-align: center;
     }
-    
+
     #contact p{
         margin-left: 0;
         width: auto;
