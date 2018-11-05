@@ -52,6 +52,9 @@ toggleIcon.addEventListener('click', () => {
 	}
 });
 
+//loader
+
+
 
 //onclick functions
 

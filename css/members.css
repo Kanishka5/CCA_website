@@ -7,6 +7,74 @@
     font-family: 'Avenir-Black';
     src: url(../fonts/Avenir\ LT\ 95\ Black.ttf);
 }
+/* loader */
+
+.loader-page {
+    background-color: #333;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .5s ease-out;
+  }
+  .loader-container {
+    /* border: 1px solid steelblue; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    width: 500px;
+    height: 5px;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+  }
+
+  .loader-text{
+    z-index:55;
+    color:white;
+    font-size:40px;
+    background-color:black;
+    width:300px;
+    text-align:center;
+    font-family:Avenir;
+  }
+
+  .loader-counter {
+    position: absolute;
+    font-size: 200px;
+    font-family: 'Avenir-Black' ;
+    color: steelblue;
+    z-index: 9;
+  }
+
+  .loader-page .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+
+@media (max-width: 768px) {
+.loader h1 {
+  font-size: 5vw;
+}
+}
+
+
+
+
 
 /* about */
 #about{
