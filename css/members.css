@@ -7,6 +7,8 @@
     font-family: 'Avenir-Black';
     src: url(../fonts/Avenir\ LT\ 95\ Black.ttf);
 }
+
+
 /* loader */
 
 .loader-page {
@@ -73,7 +75,239 @@
 }
 
 
+/* Cells */
+    #cells{
+        margin-left: 9vw;
+    }
+  
+    #cells .text{
+        position: absolute;
+        top: 144px;
+        left: 22.2vw;
+        width: 42vw;
+    }
 
+    #cells h1{
+        font-family: Avenir-Black,sans-serif;
+        font-weight: 900;
+    }
+
+    #cells p{
+        font-family: Avenir;
+        font-size: 26px;
+    }
+
+    .cell_thumbnails{
+        position: absolute;
+        top: 455px;
+    }
+
+    .core{
+        height: 414px;
+        width: 256px;
+        margin-top: 30%;
+    }
+    .e-cell{
+        width: 349px;
+        height: 231px;
+    }
+
+    .r_d{
+        width: 348px;
+        height: 220px;
+    }
+
+    .robo{
+        margin-top: 19%;
+        height: 509px;
+        width: 256px;
+    }
+
+    .wdct{
+        height: 563px;
+        width: 256px;
+    }
+
+  .fullscreen {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    right: -200%;
+    z-index: 61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/escheresque_ste.png");
+    background-color: #333; /* This background color will display, when the image is unavailable */
+  }
+  
+  .middle {
+    z-index: 60;
+    background-color: transparent;
+    display: block;
+  }
+  
+  .content {
+    display: block;
+    overflow-y: auto;
+    position: relative;
+    width: 98vw;
+    height: 98vh;
+    background-color: aliceblue;
+    padding: 5%;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .title {
+    font-size: 40px;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  
+  #backbutton {
+    height: 5%;
+    width: 5vh;
+    outline: none !important;
+    transform: rotate(180deg);
+  }
+  
+  .back {
+    background-color: aliceblue;
+    border: aliceblue;
+    align-content: center;
+    width: 5vh;
+    justify-content: center;
+    outline: none !important;
+  }
+  
+  .contain {
+    background-color: aliceblue;
+    overflow: scroll;
+    justify-content: center;
+    margin: 2%;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  @media screen and (min-width: 768px){
+    .short {
+      padding-top: 3.8%;
+      margin-left: 13%;
+      max-width: 55%;
+      overflow-x: auto;
+    }
+    .bio {
+        padding-bottom: 1%;
+    }
+    .cell_thumbnails {
+      display: inline-flex;
+      float: left;
+      z-index: 50;
+    }
+    .core{
+      margin-left: 10vw;
+    }
+
+    .r_d {
+      margin-left: 3vw;
+      margin-top: 2vh;
+    }
+    .ecell_rd {
+      display: block;
+      margin-left: 1.7vw;
+    }
+    .robo {
+      margin-left: 1.7vw;
+    }
+    .wdct {
+      margin-left: 1.7vw;
+      margin-top: -86%; 
+    }
+  }
+  @media screen and (max-width: 768px) {
+      #cells{
+          margin-left: 3vw;
+      }
+    #cells .text{
+        position: unset;
+        width: auto;
+        margin-top: 10vh;
+    }
+    .short {
+      padding-top: 3.8%;
+      margin-left: 6%;
+      max-width: 88%;
+    }
+    .bio {
+        padding-bottom: 1%;
+    }
+    .cell_thumbnails {
+        position: unset;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      margin-left: 12vw;
+    }
+    .core{
+        padding-top: 2vh;
+      max-width: 98vw;
+      height: auto;
+      width: auto;
+    }
+    .e-cell {
+        padding-top: 2vh;
+      max-width: 98vw;
+      height: auto;
+        width: auto;
+    }
+    .r_d {
+        padding-top: 2vh;
+      max-width: 98vw;
+      height: auto;
+      width: auto;
+    }
+    .ecell_rd {
+        padding-top: 2vh;
+      max-width: 98vw;
+      height: auto;
+      width: auto;
+    }
+    .robo {
+        margin-top: 0;
+        padding-top: 2vh;
+      max-width: 98vw;
+      height: auto;
+      width: auto;
+    }
+    .wdct {
+      padding-top: 4vh;
+      max-width: 98vw;
+      height: auto;
+      width: auto;
+    }
+
+  }
 
 
 /* about */
@@ -343,15 +577,17 @@
 
 .membercard figure h1{
     position: absolute;
-    font-size: 34px;
-    bottom: -1px;
-    transition:transform 1s;
+    font-size: 1.5em;
+    bottom: 11px;
+    padding-left: 14px;
+    transition:transform 0.8s;
 }
 
 .membercard figure p{
     bottom: -37px;
+    padding-left: 14px;
     position: absolute;
-    transition:transform 1s;
+    transition:transform 0.8s;
 }
 
 .membercard figcaption{
