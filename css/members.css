@@ -253,6 +253,8 @@
         position: unset;
         width: auto;
         margin-top: 10vh;
+        font-size: 20px;
+        text-align: center;
     }
     .short {
       padding-top: 3.8%;
@@ -270,6 +272,7 @@
       margin-left: 12vw;
     }
     .core{
+        margin-top: 15%;
         padding-top: 2vh;
       max-width: 98vw;
       height: auto;
