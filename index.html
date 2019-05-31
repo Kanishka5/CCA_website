@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/ccalogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/members.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="img/ccalogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/members.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <title>CCA | Center For Cognitive Activities</title>
-</head>
-<body>
+  </head>
 
+  <body>
     <!-- onclick page change -->
     <script src="js/classie.js"></script>
     <script src="js/svgLoader.js"></script>
-
 
     <!-- loader 
 
@@ -57,528 +76,745 @@
     </script>
     -->
 
-
-
     <!-- path of transition -->
-            <div id="loader" class="pageload-overlay" data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z">
-				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="xMidYMid slice">
-					<path d="M40,30 c 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 Z"/>
-				</svg>
-			</div>
+    <div
+      id="loader"
+      class="pageload-overlay"
+      data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="100%"
+        viewBox="0 0 80 60"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <path d="M40,30 c 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 Z" />
+      </svg>
+    </div>
 
     <!-- sidebar -->
 
-            <!-- Menu Icon -->
-            <div class="menuIcon">
-                <span class="icon icon-bars"></span>
-                <span class="icon icon-bars overlay"></span>
-            </div>
-            <!-- mobile menu -->
-            <div class="overlay-menu">
-                <ul id="menu">
-                    <li><a href="#" onclick="abt()"> ABOUT </a></li>
-                    <li><a href="#" onclick="arhn()"> AAROHAN </a></li>
-                    <li><a href="#" onclick="cells()"> CELLS </a></li>
-                    <li><a href="#" onclick="members()"> MEMBERS </a></li>
-                    <li><a href="#" onclick="contact()"> CONTACT US </a></li>
-                    <li>
-                        <p>
-                            <a href="https://www.facebook.com/arhn.nitd/">
-                                  <i class="fa fa-facebook-square" style="font-size:20px"></i>
-                            </a>
-                        </p>
-                        <p>
-                            <a href="https://www.youtube.com/user/arhnNITD">
-                                  <i class="fa fa-youtube" style="font-size:20px"></i>
-                            </a>
-                        </p>
-                        <p>
-                            <a href="https://www.instagram.com/arhn.nitd/">
-                                  <i class="fa fa-instagram" style="font-size:20px"></i>
-                            </a>
-                        </p>
-                        <p>
-                              <a href="https://twitter.com/aarohan_nitdgp">
-                                    <i class="fa fa-twitter" style="font-size:20px"></i>
-                              </a>
-                       </p>
-                    </li>
-                  </ul>
-              </div>
+    <!-- Menu Icon -->
+    <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
+    </div>
+    <!-- mobile menu -->
+    <div class="overlay-menu">
+      <ul id="menu">
+        <li><a href="#" onclick="abt()"> ABOUT </a></li>
+        <li><a href="#" onclick="arhn()"> AAROHAN </a></li>
+        <li><a href="#" onclick="cells()"> CELLS </a></li>
+        <li><a href="#" onclick="members()"> MEMBERS </a></li>
+        <li><a href="#" onclick="contact()"> CONTACT US </a></li>
+        <li>
+          <p>
+            <a href="https://www.facebook.com/arhn.nitd/">
+              <i class="fa fa-facebook-square" style="font-size:20px"></i>
+            </a>
+          </p>
+          <p>
+            <a href="https://www.youtube.com/user/arhnNITD">
+              <i class="fa fa-youtube" style="font-size:20px"></i>
+            </a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/arhn.nitd/">
+              <i class="fa fa-instagram" style="font-size:20px"></i>
+            </a>
+          </p>
+          <p>
+            <a href="https://twitter.com/aarohan_nitdgp">
+              <i class="fa fa-twitter" style="font-size:20px"></i>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
 
-
-            <div class="sidebar">
-                <p><i class="fa fa-align-left" style="font-size:20px;transform: rotate(90deg)"></i></p>
-              <p><a href="#" onclick="abt()"> ABOUT </a></p>
-              <p><a href="#" onclick="arhn()"> AAROHAN </a></p>
-              <p><a href="#" onclick="cells()"> CELLS </a></p>
-              <p><a href="#" onclick="members()"> MEMBERS </a></p>
-              <p><a href="#" onclick="contact()"> CONTACT US </a></p>
-              <div class="icons">
-                  <p>
-                      <a href="https://www.facebook.com/arhn.nitd/">
-                            <i class="fa fa-facebook-square" style="font-size:20px;transform: rotate(90deg)"></i>
-                      </a>
-                  </p>
-                  <p>
-                      <a href="https://www.youtube.com/user/arhnNITD">
-                            <i class="fa fa-youtube" style="font-size:20px;transform: rotate(90deg)"></i>
-                      </a>
-                  </p>
-                  <p>
-                      <a href="https://www.instagram.com/arhn.nitd/">
-                            <i class="fa fa-instagram" style="font-size:20px;transform: rotate(90deg)"></i>
-                      </a>
-                  </p>
-                  <p>
-                        <a href="https://twitter.com/aarohan_nitdgp">
-                              <i class="fa fa-twitter" style="font-size:20px;transform: rotate(90deg)"></i>
-                        </a>
-                 </p>
-            </div>
-        </div>
+    <p
+      id="icon"
+      style="          
+      top: 2.1%;
+    position: fixed;
+    left: 27px;
+    z-index: 56;"
+    >
+      <a id="menu_icon" onclick="hide()"
+      style="color:#6b6a6a; "
+        ><i class="fa fa-align-left" style="font-size:20px;    "></i
+      ></a>
+    </p>
+    <div class="sidebar">
+      <p><a href="#" onclick="abt()"> ABOUT </a></p>
+      <p><a href="#" onclick="arhn()"> AAROHAN </a></p>
+      <p><a href="#" onclick="cells()"> CELLS </a></p>
+      <p><a href="#" onclick="members()"> MEMBERS </a></p>
+      <p><a href="#" onclick="contact()"> CONTACT US </a></p>
+      <div class="icons">
+        <p>
+          <a href="https://www.facebook.com/arhn.nitd/">
+            <i
+              class="fa fa-facebook-square"
+              style="font-size:20px;transform: rotate(90deg)"
+            ></i>
+          </a>
+        </p>
+        <p>
+          <a href="https://www.youtube.com/user/arhnNITD">
+            <i
+              class="fa fa-youtube"
+              style="font-size:20px;transform: rotate(90deg)"
+            ></i>
+          </a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/arhn.nitd/">
+            <i
+              class="fa fa-instagram"
+              style="font-size:20px;transform: rotate(90deg)"
+            ></i>
+          </a>
+        </p>
+        <p>
+          <a href="https://twitter.com/aarohan_nitdgp">
+            <i
+              class="fa fa-twitter"
+              style="font-size:20px;transform: rotate(90deg)"
+            ></i>
+          </a>
+        </p>
+      </div>
+    </div>
 
     <!-- logos -->
     <div class="cca">
-        <a href="https://www.ccanitd.in/">
-            <img src="img/ccalogo.png">
-        </a>
+      <a href="#" onclick="home()"> <img src="img/ccalogo.png" /> </a>
     </div>
     <div class="arhn">
-        <a href="http://arhn.co.in/">
-            <img src="img/arhnlogo.png" alt="arhn">
-            <p>Visit Aarohan 2019</p>
-        </a>
+      <a href="http://arhn.co.in/">
+        <img src="img/arhnlogo.png" alt="arhn" />
+        <p>Visit Aarohan 2019</p>
+      </a>
+    </div>
+
+    <!-- home -->
+    <div id="home">
+        <div class="inner_home">
+                <h1>Center for Cognitive Activities</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum
+                </p>
+        </div>
+
     </div>
 
     <!-- about -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="brk-img-double-wide">
-                        <div class="brk-img-double-wide__container"><img src="https://www.ccanitd.in/images/Aaryan.jpg" class="lazyload"/></div>
-                        <div class="brk-img-double-wide__container"><img src="https://www.ccanitd.in/images/Aaryan.jpg" class="lazyload"/></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                        <h1>About CCA!</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="brk-img-double-wide">
+              <div class="brk-img-double-wide__container">
+                <img
+                  src="https://www.ccanitd.in/images/Aaryan.jpg"
+                  class="lazyload"
+                />
+              </div>
+              <div class="brk-img-double-wide__container">
+                <img
+                  src="https://www.ccanitd.in/images/Aaryan.jpg"
+                  class="lazyload"
+                />
+              </div>
             </div>
+          </div>
+          <div class="col-sm-6">
+            <h1>About CCA!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- arhn -->
     <div id="arhn">
-        <div class="container">
-            <div class="row">
-                    <div class="col-sm-6">
-                            <h1>Aarohan - The Annual Techno-Management Fest</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                <div class="col-sm-6">
-                    <div class="brk-img-double-wide-nohover">
-                        <div class="brk-img-double-wide__container"><img src="https://www.ccanitd.in/images/Aaryan.jpg" class="lazyload"/></div>
-                        <div class="embed-responsive embed-responsive-16by9 brk-img-double-wide__container">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qmCSikVcip4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                                </iframe>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Aarohan - The Annual Techno-Management Fest</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="brk-img-double-wide-nohover">
+              <div class="brk-img-double-wide__container">
+                <img
+                  src="https://www.ccanitd.in/images/Aaryan.jpg"
+                  class="lazyload"
+                />
+              </div>
+              <div
+                class="embed-responsive embed-responsive-16by9 brk-img-double-wide__container"
+              >
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/qmCSikVcip4"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- cells -->
+    <script type="text/javascript">
+      function Slide() {
+        console.log(1);
+        var logo = document.getElementById("fullscreenDiv");
+        TweenLite.to(logo, 0.7, {
+          ease: Power1.easeOut,
+          right: "0",
+          display: "block"
+        });
+
+        var logo2 = document.getElementById("middle");
+        TweenLite.to(logo2, 0.7, {
+          ease: Power1.easeOut,
+          right: "0%"
+        });
+      }
+
+      function SlideBack() {
+        var logo = document.getElementById("fullscreenDiv");
+        TweenLite.to(logo, 0.7, {
+          ease: Power1.easeIn,
+          right: "-100%"
+        });
+        var logo2 = document.getElementById("middle");
+        TweenLite.to(logo2, 0.7, {
+          ease: Power1.easeIn,
+          right: "-100%",
+          display: "none"
+          //backgroundColor: "black",
+          // borderBottomColor: "#90e500",
+          // color: "white"
+        });
+      }
+
+      function setCore() {
+        console.log(1);
+        text.innerHTML = "<h1>Core Cell</h1>";
+        Slide();
+      }
+
+      function setEcell() {
+        var text = document.getElementById("text");
+        text.innerHTML = "<h1>E Cell</h1>";
+        Slide();
+      }
+
+      function setRobo() {
+        var text = document.getElementById("text");
+        text.innerHTML = "<h1>Robo Cell</h1>";
+        Slide();
+      }
+
+      function setRDI() {
+        var text = document.getElementById("text");
+        text.innerHTML = "<h1>RD&I Cell</h1>";
+        Slide();
+      }
+
+      function setWDCT() {
+        var text = document.getElementById("text");
+        text.innerHTML = "<h1>WDCT</h1>";
+        Slide();
+      }
+    </script>
+
     <div id="cells">
-                    <div class="text">
-                        <h1>Our Cells</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-                    </div>
-                    <div class="cell_thumbnails">
-                            <div>
-                                <a href="#" onclick="setCore()"><img class="core round" src="https://www.ccanitd.in/images/Vinesh.jpg"></a>
-                            </div>
-                            <div class="ecell_rd">
-                                <p><a href="#" onclick="setEcell()"><img class="e-cell round" src="https://www.ccanitd.in/images/Vinesh.jpg"></a></p>
-                                <p><a href="#" onclick="setRDI()"><img class="r_d round" src="https://www.ccanitd.in/images/Vinesh.jpg"></a></p>
-                            </div>
-                            <div>
-                                <a href="#" onclick="setRobo()"><img class="robo round" src="https://www.ccanitd.in/images/Vinesh.jpg"></a>
-                            </div>
-                            <div>
-                                <a href="#" onclick="setWDCT()"><img class="wdct round" src="https://www.ccanitd.in/images/Vinesh.jpg"></a>
-                            </div>
-                    </div>
+      <div class="text">
+        <h1>Our Cells</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate
+        </p>
+      </div>
+      <div class="cell_thumbnails">
+        <div>
+          <a href="#" onclick="setCore()"
+            ><img
+              class="core round"
+              src="https://www.ccanitd.in/images/Vinesh.jpg"
+          /></a>
+        </div>
+        <div class="ecell_rd">
+          <p>
+            <a href="#" onclick="setEcell()"
+              ><img
+                class="e-cell round"
+                src="https://www.ccanitd.in/images/Vinesh.jpg"
+            /></a>
+          </p>
+          <p>
+            <a href="#" onclick="setRDI()"
+              ><img
+                class="r_d round"
+                src="https://www.ccanitd.in/images/Vinesh.jpg"
+            /></a>
+          </p>
+        </div>
+        <div>
+          <a href="#" onclick="setRobo()"
+            ><img
+              class="robo round"
+              src="https://www.ccanitd.in/images/Vinesh.jpg"
+          /></a>
+        </div>
+        <div>
+          <a href="#" onclick="setWDCT()"
+            ><img
+              class="wdct round"
+              src="https://www.ccanitd.in/images/Vinesh.jpg"
+          /></a>
+        </div>
+      </div>
     </div>
 
-   
-
+    <div id="fullscreenDiv" class="fullscreen">
+      <div class="fullscreen middle" id="middle">
+        <div class="contain">
+          <div class="navpanel">
+            <button class="back" onclick="SlideBack()">
+              <img
+                src="C:/Users/Swarnendu/Desktop/Sidenav/back.png"
+                id="backbutton"
+                alt="Back Button"
+              />
+            </button>
+          </div>
+          <div class="content">
+            <p ref="text" id="text">This is the content div.</p>
+            <img src="C:/Users/Swarnendu/Desktop/bg2.jpg" alt="Image" />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- members -->
     <div id="team">
-        <div class="container">
-            <div class="heading member">
-                    <h1>Meet the Team</h1>
+      <div class="container">
+        <div class="heading member"><h1>Meet the Team</h1></div>
+        <div class="row no-gutter">
+          <div class="col-sm-2 col-md-offset-1">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Shivam.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>SHIVAM KR JHA</h1>
+                    <p>CONVENER & HEAD</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Shivam.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>SHIVAM KR JHA</h1>
-                                    <p>CONVENER & HEAD</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Mayank.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>MAYANK MEHTA</h1>
-                                    <p>GENERAL SECRETARY</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Akhil.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>AKHIL KOMMINENIA</h1>
-                                    <p>TREASURER</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Mayank.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>MAYANK MEHTA</h1>
+                    <p>GENERAL SECRETARY</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div class="row no-gutter">
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Ruchika.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>RUCHIKA RATHI</h1>
-                                    <p>EXECUTIVE FEST COORDINATOR</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/AkshayS.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>AKSHAY SHARMA</h1>
-                                    <p>EXECUTIVE FEST COORDINATOR</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/AbhishekS.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>ABHISHEK KR. SHAH</h1>
-                                    <p style="bottom:-62px">HEAD, CORPORATE COMMUNICATIONS</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Akhil.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>AKHIL KOMMINENIA</h1>
+                    <p>TREASURER</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div class="row no-gutter">
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Arindam.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>ARINDAM MANDAL</h1>
-                                    <p style="bottom:-62px">HEAD, CORPORATE COMMUNICATIONS</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Aastha.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1 style="bottom:-2px">AASTHA JHUNJHUNWALA</h1>
-                                    <p>HEAD, ATH</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Arnab.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>ARNAB KR. GOSWAMI</h1>
-                                    <p>HEAD, ATH</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Aaryan.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>AARYAN SINGH</h1>
+                    <p style="bottom:-62px">HEAD, WEB,DESIGN & CREATIVE TEAM</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div class="row no-gutter">
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Aaryan.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>AARYAN SINGH</h1>
-                                    <p style="bottom:-62px">HEAD, WEB,DESIGN & CREATIVE TEAM</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Vinesh.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>VINESH BATTULA</h1>
-                                    <p style="bottom:-62px">HEAD, WEB,DESIGN & CREATIVE TEAM</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Indrajeet.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>INDRAJEET GAJBHIYE</h1>
-                                    <p>HEAD, ROBOCELL</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Vinesh.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>VINESH BATTULA</h1>
+                    <p style="bottom:-62px">HEAD, WEB,DESIGN & CREATIVE TEAM</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div class="row no-gutter">
-                    <div class="col-lg-4 col-sm-6">
-                    <div class="membercard">
-                        <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                        <figure >
-                            <img src="https://www.ccanitd.in/images/Vishal.jpg" />
-                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                            </svg>
-                            <figcaption>
-                                    <h1>VISHAL MANDLEY</h1>
-                                    <p>HEAD, ROBOCELL</p>
-                            </figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                            <div class="membercard">
-                                    <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                                    <figure >
-                                        <img src="https://www.ccanitd.in/images/Argha.jpg" />
-                                        <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                            <path d="M 0,414 275,414 275,350 0,350 z"/>
-                                        </svg>
-                                        <figcaption>
-                                                <h1>ARGHA DAS</h1>
-                                                <p>HEAD, E-CELL</p>
-                                        </figcaption>
-                                    </figure>
-                                    </a>
-                            </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                            <div class="membercard">
-                                    <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                                    <figure >
-                                        <img src="https://www.ccanitd.in/images/Neha.jpg" />
-                                        <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                            <path d="M 0,414 275,414 275,350 0,350 z"/>
-                                        </svg>
-                                        <figcaption>
-                                                <h1>NEHA UPADHYAY</h1>
-                                                <p>HEAD, E-CELL</p>
-                                        </figcaption>
-                                    </figure>
-                                    </a>
-                            </div>
-                    </div>
+          </div>
+        </div>
+        <div class="row no-gutter">
+          <div class="col-sm-2 col-md-offset-1">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Ruchika.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>RUCHIKA RATHI</h1>
+                    <p>EXECUTIVE FEST COORDINATOR</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div class="row no-gutter">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="membercard">
-                            <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                            <figure >
-                                <img src="https://www.ccanitd.in/images/Anshuman.jpg" />
-                                <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                    <path d="M 0,414 275,414 275,350 0,350 z"/>
-                                </svg>
-                                <figcaption>
-                                        <h1 style="bottom:-2px">ANSHUMAN PANIGRAHI</h1>
-                                        <p>HEAD, RD & I CELL</p>
-                                </figcaption>
-                            </figure>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                            <div class="membercard">
-                                    <a  data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                                    <figure >
-                                        <img src="https://www.ccanitd.in/images/Bhanu.jpg" />
-                                        <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                            <path d="M 0,414 275,414 275,350 0,350 z"/>
-                                        </svg>
-                                        <figcaption>
-                                                <h1 style="bottom:-2px">BHANU PRAKASH ANCHULA</h1>
-                                                <p>HEAD, RD & I CELL</p>
-                                        </figcaption>
-                                    </figure>
-                                    </a>
-                            </div>
-                    </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/AkshayS.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>AKSHAY SHARMA</h1>
+                    <p>EXECUTIVE FEST COORDINATOR</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Indrajeet.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>INDRAJEET GAJBHIYE</h1>
+                    <p>HEAD, ROBOCELL</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Vishal.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>VISHAL MANDLEY</h1>
+                    <p>HEAD, ROBOCELL</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Argha.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>ARGHA DAS</h1>
+                    <p>HEAD, E-CELL</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!-- faculty  -->
-        <div class="container">
-            <div class="heading faculty">
-                    <h1>Meet the Faculty Advisors</h1>
+        <div class="row no-gutter">
+          <div class="col-sm-2 col-md-offset-1">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Neha.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>NEHA UPADHYAY</h1>
+                    <p>HEAD, E-CELL</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div id="facpara">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Anshuman.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1 style="bottom:-2px">ANSHUMAN PANIGRAHI</h1>
+                    <p>HEAD, RD & I CELL</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div class="row no-gutter">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="membercard">
-                                <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                                        <figure >
-                                            <img src="https://www.ccanitd.in/images/NKRoy1.png" />
-                                            <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                                <path d="M 0,414 275,414 275,350 0,350 z"/>
-                                            </svg>
-                                            <figcaption>
-                                                    <h1>PROF. N.K. ROY</h1>
-                                                    <p>CHIEF FACULTY ADVISOR</p>
-                                            </figcaption>
-                                        </figure>
-                                </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                            <div class="membercard">
-                                    <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                                            <figure >
-                                                <img src="https://www.ccanitd.in/images/PKhumbakar.png" />
-                                                <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                                    <path d="M 0,414 275,414 275,350 0,350 z"/>
-                                                </svg>
-                                                <figcaption>
-                                                        <h1>PROF. P. KUMBHAKAR</h1>
-                                                        <p>CHIEF FACULTY ADVISOR</p>
-                                                </figcaption>
-                                            </figure>
-                                    </a>
-                            </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                            <div class="membercard">
-                                    <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
-                                            <figure >
-                                                <img src="https://www.ccanitd.in/images/Joydeep.png" />
-                                                <svg viewBox="0 0 275 414" preserveAspectRatio="none">
-                                                    <path d="M 0,414 275,414 275,350 0,350 z"/>
-                                                </svg>
-                                                <figcaption>
-                                                        <h1 style="bottom:-2px">DR. JOYDEEP BANNERJEE</h1>
-                                                        <p>CHIEF FACULTY ADVISOR</p>
-                                                </figcaption>
-                                            </figure>
-                                    </a>
-                            </div>
-                    </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Bhanu.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1 style="bottom:-2px">BHANU PRAKASH ANCHULA</h1>
+                    <p>HEAD, RD & I CELL</p>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/AbhishekS.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>ABHISHEK KR. SHAH</h1>
+                    <p style="bottom:-62px">HEAD, CORPORATE COMMUNICATIONS</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Arindam.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>ARINDAM MANDAL</h1>
+                    <p style="bottom:-62px">HEAD, CORPORATE COMMUNICATIONS</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
         </div>
+        <div class="row no-gutter">
+          <div class="col-sm-2 col-md-offset-1">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Aastha.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1 style="bottom:-2px">AASTHA JHUNJHUNWALA</h1>
+                    <p>HEAD, ATH</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Arnab.jpg" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>ARNAB KR. GOSWAMI</h1>
+                    <p>HEAD, ATH</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- faculty  -->
+      <div class="container">
+        <div class="heading faculty"><h1>Meet the Faculty Advisors</h1></div>
+        <div id="facpara">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+        <div class="row no-gutter">
+          <div class="col-lg-3 col-lg-offset-2 col-sm-6">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/NKRoy1.png" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>PROF. N.K. ROY</h1>
+                    <p>CHIEF FACULTY ADVISOR</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/PKhumbakar.png" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1>PROF. P. KUMBHAKAR</h1>
+                    <p>CHIEF FACULTY ADVISOR</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="membercard">
+              <a data-path-hover="M 0,414 275,414 275,240 0,280 z">
+                <figure>
+                  <img src="https://www.ccanitd.in/images/Joydeep.png" />
+                  <svg viewBox="0 0 275 414" preserveAspectRatio="none">
+                    <path d="M 0,414 275,414 275,350 0,350 z" />
+                  </svg>
+                  <figcaption>
+                    <h1 style="bottom:-2px">DR. JOYDEEP BANNERJEE</h1>
+                    <p>CHIEF FACULTY ADVISOR</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
 
     <!-- contact us -->
-    <div id="contact">
-        <div class="container">
-            <h1>Contact Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
+    <div id="contact" onmousewheel="myFunction()">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
+      </div>
+      <footer>
+        Credits: Web, Design & Creative Team, CCA. 2018-present. All Rights
+        Reserved.
+      </footer>
+      <a href="#" onclick="wdct_egg()">
+            <div class="egg" >
+            </div>
+        </a>
+      <div id="wdct_egg">
+          <h1>WDCT</h1>
+      </div>
     </div>
+   
 
     <script src="js/members.js"></script>
-</body>
+  </body>
 </html>
