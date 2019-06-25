@@ -125,35 +125,21 @@
         font-size: 26px;
     }
 
+    .cells img {
+        height: 30vh;
+        width: 14vw;
+    }
     .cell_thumbnails{
         position: absolute;
-        top: 455px;
-    }
-
-    .core{
-        height: 40.42vh;
-        width: 17.77vw;
-        margin-top: 30%;
-    }
-    .e-cell{
-        width: 24.2vw;
-        height: 22.55vh;
-    }
-
-    .r_d{
-        width: 24.1vw;
-        height: 21.48vh;
-    }
-
-    .robo{
-        margin-top: 19%;
-        height: 49.47vh;
-        width: 17.7vw;
-    }
-
-    .wdct{
-        height: 55vh;
-        width: 17.7vw;
+        bottom: 0;
+        display: inline-flex;
+        z-index: 50;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 6vh 10vw;
+        background-color: #d8d8d83d;
     }
 
     #fullscreenDiv{
@@ -261,9 +247,15 @@
         padding-bottom: 1%;
     }
     .cell_thumbnails {
-      display: inline-flex;
-      float: left;
-      z-index: 50;
+        display: inline-flex;
+        z-index: 50;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 0 10vw;
+        padding-top: 10vh;
+        background-color: #d8d8d83d;
     }
     .core{
       margin-left: 10vw;
@@ -762,12 +754,13 @@ footer {
   .hidebar {
     /* opacity: 0; */
     animation: hide;
-    animation-duration: 0.1s;
+    animation-duration: 0.4s;
+    /* animation-timing-function: ease-in; */
     animation-fill-mode: forwards;
 }
 
 @keyframes hide {
-    0%   {transform: rotate(-90deg) translateY(-0)}
+    0%   {transform: rotate(-90deg) translateY(0)}
     25%  {transform:rotate(-90deg) translateY(-18px)}
     50%  {transform:rotate(-90deg) translateY(-36px)}
     75%  {transform:rotate(-90deg) translateY(-54px)}
@@ -932,7 +925,7 @@ footer {
     right: 0;
     z-index: 55;
     padding-right: 15px;
-    transform: translateX(-100%);
+    transform: translateX(-100vw);
     width: 100vw;
     height: 100vh;
     -webkit-transition: transform 0.2s ease-out;

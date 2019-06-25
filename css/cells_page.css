@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'Avenir';
+	src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+@font-face{
+    font-family: 'Avenir-Black';
+    src: url(../fonts/Avenir\ LT\ 95\ Black.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.landing {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(https://image.freepik.com/free-vector/team-software-developers_82574-172.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    z-index: -5;
+}
+
+/* 'https://image.freepik.com/free-vector/web-developers-team-work-online-startup-group_93633-58.jpg' */
+/* https://image.freepik.com/free-photo/colleagues-giving-fist-bump_53876-64857.jpg */
+/* https://image.freepik.com/free-vector/team-software-developers_82574-172.jpg */
+/* https://www.freepik.com/premium-vector/programmer-character-working-laptop-teamwork_4362195.htm */
+
+#back_button {
+    position: fixed;
+    top: 4vh;
+    left: 5vh;
+    font-size: 1.2rem;
+}
+
+.about_cell {
+    width: max-content;
+    margin-left: 10%;
+    font-family: 'Avenir';
+    font-size: 1.7rem;
+    padding: 0 1%;
+    background: #eeeeee59;
+    margin-top: 10vh;
+}
+
+.cell_details {
+    height: 100vh;
+    width: 70vw;
+    position: absolute;
+    bottom: -91vh;
+    padding-left: 2vw;
+    left: 10vw;
+    background: #62a8e6;
+}
+
+

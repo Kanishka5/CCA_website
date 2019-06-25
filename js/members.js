@@ -26,7 +26,7 @@
   init();
 })();
 
-//responsive menu
+// responsive menu
 
 let menuIcon = document.querySelector(".menuIcon");
 let nav = document.querySelector(".overlay-menu");
