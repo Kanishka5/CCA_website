@@ -78,7 +78,7 @@
 /* home */
 #home{
     z-index: -2;
-    background-image: url(../img/landing.png);
+    background-image: url(../img/landing1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -538,6 +538,16 @@
 }
 
 /* contact */
+#contact{
+  z-index: -2;
+    background-image: url(../img/contact1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+}
 #contact h1{
     margin-top: 12.3%;
     margin-left: 12.2%;
@@ -965,6 +975,7 @@ footer {
     #contact{
         display: none;
         height: 100vh;
+
     }
 
 /* logos */
@@ -1159,6 +1170,7 @@ footer {
     /* contact */
     #contact{
         text-align: center;
+
     }
 
     #contact p{
