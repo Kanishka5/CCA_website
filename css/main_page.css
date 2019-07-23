@@ -112,7 +112,7 @@
 
 #home p{
     font-family: Avenir;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 
@@ -132,7 +132,7 @@
 
     #cells p{
         font-family: Avenir;
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .cells img {
@@ -370,7 +370,7 @@
 #about p{
     margin-top: 40px;
     font-family: Avenir;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .brk-img-double-wide{
@@ -496,7 +496,7 @@
 
 #arhn p{
     font-family: Avenir;
-    font-size: 26px;
+    font-size: 20px;
     margin-top: 3.7vh;
 }
 
@@ -571,7 +571,7 @@
     width: 67%;
     margin-top: 3.2%;
     font-family: Avenir;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 footer {
@@ -648,6 +648,7 @@ footer {
     line-height: normal;
     letter-spacing: normal;
     color: #000000;
+    text-align: center;
 }
 
 .heading.member{
@@ -724,7 +725,7 @@ footer {
 }
 
 #facpara{
-    font-size: 26px;
+    font-size: 20px;
     margin-bottom: 80px;
 }
 
