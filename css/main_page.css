@@ -80,12 +80,22 @@
     z-index: -2;
     background-image: url(../img/landing1.png);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     position: absolute;
     width: 100vw;
 }
+@media (max-width: 768px) {
+  #home {
+    background-repeat:repeat-y;
+  }
+}
+@media (min-width: 769px) {
+  #home {
+    height: 100vh;
+  }
+}
+
+
 .inner_home{
     display: block;
     margin-top:144px;
