@@ -103,7 +103,7 @@ body{
     display: block;
     margin-top:22vh;
     margin-left: 12.2vw;
-    width: 48vw;
+    width: 43vw;
     color: #d8d8d8;
 }
 
@@ -116,7 +116,7 @@ body{
 
 #home p{
     font-family: Avenir;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     color:white
 }
 
@@ -141,8 +141,8 @@ body{
     }
 
     .cells img {
-        height: 42vh;
-        width: 32vh;
+        width: 17.5vw;
+        /* width: 32vh; */
     }
     .cell_thumbnails{
         position: absolute;
@@ -507,6 +507,16 @@ body{
     display: none;
 }
 
+#arhn img{
+    width: 99vw;
+    position: absolute;
+    top: 3vh;
+}
+
+#arhn .container {
+    margin-top:35vh
+}
+
 #arhn h1{
     font-family: Avenir-Black;
     /* margin-top: 7.8vh; */
@@ -518,10 +528,12 @@ body{
     margin-top: 3.7vh;
 }
 
+#arhn .brk-img-double-wide__container:first-child{
+    opacity:0.8
+}
+
 #arhn .brk-img-double-wide__container:first-child img{
-    width: 100%;
-    height: 471px;
-    opacity: 0.4;
+    width: 88%;
 }
 
 #arhn .brk-img-double-wide__container:last-child img{
@@ -689,6 +701,7 @@ footer {
 }
 
 .membercard{
+    font-family: Avenir-Black;
     height: 256px;
     width: 168px;
     background-color: #d8d8d8;
@@ -705,8 +718,8 @@ footer {
 
 .membercard figure img{
     position: absolute;
-    width: 100%;
-    height: 84%;
+    left:-1.5vw;
+    height: 100%;
 }
 
 .membercard figure svg{
@@ -714,11 +727,13 @@ footer {
 }
 
 .membercard figure h1{
+    font-family: Avenir,sans-serif;
     position: absolute;
     font-size: 1.4rem;
     bottom: 0;
     padding-left: 14px;
     transition:transform 0.8s;
+    font-weight: 600
 }
 
 .membercard figure p{
@@ -1065,7 +1080,7 @@ footer {
 	top: 0;
 	left: 0;
 	visibility: hidden;
-	background-color: bisque;
+	background-color: #e0baff;
 	z-index: 57;
 }
 
