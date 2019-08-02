@@ -65,6 +65,10 @@ function home() {
   let contact = document.getElementById("contact");
   let nav = document.querySelector(".overlay-menu");
   let toggleIcon = document.querySelector(".menuIcon");
+  let logo = document.querySelector(".cca");
+  let logoimg = document.getElementById("logoImg");
+  logoimg.style.height = "150px";
+  logo.style.top = "10%";
   home.style.display = "block";
   about.style.display = "none";
   arhn.style.display = "none";
@@ -91,6 +95,10 @@ function abt() {
   let contact = document.getElementById("contact");
   let nav = document.querySelector(".overlay-menu");
   let toggleIcon = document.querySelector(".menuIcon");
+  let logo = document.querySelector(".cca");
+  let logoimg = document.getElementById("logoImg");
+  logoimg.style.height = "55px";
+  logo.style.top = "2%";
   home.style.display = "none";
   about.style.display = "block";
   arhn.style.display = "none";
@@ -117,6 +125,10 @@ function arhn() {
   let contact = document.getElementById("contact");
   let nav = document.querySelector(".overlay-menu");
   let toggleIcon = document.querySelector(".menuIcon");
+  let logo = document.querySelector(".cca");
+  let logoimg = document.getElementById("logoImg");
+  logoimg.style.height = "55px";
+  logo.style.top = "2%";
   home.style.display = "none";
   about.style.display = "none";
   arhn.style.display = "block";
@@ -143,6 +155,10 @@ function cells() {
   let contact = document.getElementById("contact");
   let nav = document.querySelector(".overlay-menu");
   let toggleIcon = document.querySelector(".menuIcon");
+  let logo = document.querySelector(".cca");
+  let logoimg = document.getElementById("logoImg");
+  logoimg.style.height = "55px";
+  logo.style.top = "2%";
   home.style.display = "none";
   about.style.display = "none";
   arhn.style.display = "none";
@@ -169,6 +185,10 @@ function members() {
   let contact = document.getElementById("contact");
   let nav = document.querySelector(".overlay-menu");
   let toggleIcon = document.querySelector(".menuIcon");
+  let logo = document.querySelector(".cca");
+  let logoimg = document.getElementById("logoImg");
+  logoimg.style.height = "55px";
+  logo.style.top = "2%";
   home.style.display = "none";
   about.style.display = "none";
   arhn.style.display = "none";
@@ -195,6 +215,10 @@ function contact() {
   let contact = document.getElementById("contact");
   let nav = document.querySelector(".overlay-menu");
   let toggleIcon = document.querySelector(".menuIcon");
+  let logo = document.querySelector(".cca");
+  let logoimg = document.getElementById("logoImg");
+  logoimg.style.height = "55px";
+  logo.style.top = "2%";
   home.style.display = "none";
   about.style.display = "none";
   arhn.style.display = "none";

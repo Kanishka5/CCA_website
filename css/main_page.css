@@ -8,6 +8,9 @@
     src: url(../fonts/Avenir\ LT\ 95\ Black.ttf);
 }
 
+body{
+    background-color: #f3efef!important;
+}
 
 /* loader */
 
@@ -78,7 +81,7 @@
 /* home */
 #home{
     z-index: -2;
-    background-image: url(../img/landing1.png);
+    background-image: url(../img/landing_min.png);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -98,21 +101,23 @@
 
 .inner_home{
     display: block;
-    margin-top:144px;
+    margin-top:22vh;
     margin-left: 12.2vw;
-    width: 50vw;
+    width: 48vw;
     color: #d8d8d8;
 }
 
 #home h1{
     font-family: Avenir-Black,sans-serif;
     font-weight: 900;
-    font-size: 43px;
+    font-size: 4.5rem;
+    color: white
 }
 
 #home p{
     font-family: Avenir;
-    font-size: 20px;
+    font-size: 2.75rem;
+    color:white
 }
 
 
@@ -132,24 +137,40 @@
 
     #cells p{
         font-family: Avenir;
-        font-size: 20px;
+        font-size: 2.5rem;
     }
 
     .cells img {
-        height: 30vh;
-        width: 14vw;
+        height: 42vh;
+        width: 32vh;
     }
     .cell_thumbnails{
         position: absolute;
         bottom: 0;
-        display: inline-flex;
+        display: flex;
         z-index: 50;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-end;
+        justify-content: flex-end;
         width: 100vw;
-        padding: 6vh 10vw;
-        background-color: #d8d8d83d;
+    }
+
+    .cell_thumbnails span{
+        transform: rotateZ(-90deg);
+        margin-bottom: 15vh;
+        font-size: 2.5rem;
+        position: absolute;
+        bottom: 10vh;
+        left: -0.5vw;
+        font-weight: 600
+    }
+
+    .cellBack{
+        position: absolute;
+        bottom: 0;
+        width:100vw;
+        height: 37vh;
+        background: #e4e4e4;
     }
 
     #fullscreenDiv{
@@ -257,15 +278,12 @@
         padding-bottom: 1%;
     }
     .cell_thumbnails {
-        display: inline-flex;
+        display: flex;
         z-index: 50;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-end;
+        justify-content: flex-end;
         width: 100vw;
-        padding: 0 10vw;
-        padding-top: 10vh;
-        background-color: #d8d8d83d;
     }
     .core{
       margin-left: 10vw;
@@ -496,7 +514,7 @@
 
 #arhn p{
     font-family: Avenir;
-    font-size: 20px;
+    font-size: 2.5rem;
     margin-top: 3.7vh;
 }
 
@@ -559,7 +577,7 @@
     width: 100vw;
 }
 #contact h1{
-    margin-top: 12.3%;
+    margin-top: 20.3%;
     margin-left: 12.2%;
     font-size: 43px;
     font-weight: 900;
@@ -583,7 +601,7 @@ footer {
     height: 56px;
     font-size: 16px;
     padding-top: 18px;
-    background-color: #747474;
+    background-color: #9584b4;
     color: white;
     text-align: center;
  }
@@ -745,23 +763,23 @@ footer {
   
 .sidebar a {
       text-decoration: none !important;
-      color: #6b6a6a;
+      color: white;
   }
   
 .sidebar a:hover {
-       color: black;
+       color: rgb(255, 217, 0);
        text-decoration: none;
   }
 
   .sidebar a:active {
-      color: black !important;
+      color: #b871f2!important;
     transform: scale(1.2);
 }
 
 .sidebar {
     font-family: Avenir,sans-serif;
       font-size: 14px;
-      background: #d8d8d8;
+      background: #030822;
       width: 100vh;
       height: 72px;
       transform-origin: top left;
@@ -995,12 +1013,12 @@ footer {
 .cca{
     position: absolute;
     left: 12%;
-    top: 2%;
+    top: 4vh;
 }
 
 .cca img{
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    border-radius:16%
 }
 
 .arhn {
@@ -1010,13 +1028,14 @@ footer {
     width: 294px;
     height: 48px;
     border-radius: 28px;
-    background-color: #d8d8d8;
+    background-color: #0c164c;
   }
 
   .arhn p{
       float: left;
       margin-top: 0;
       padding-top: 14px;
+      color: white
   }
 
 .arhn img{
@@ -1035,7 +1054,7 @@ footer {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 /* loader */
