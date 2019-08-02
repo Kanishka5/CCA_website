@@ -68,7 +68,7 @@ function home() {
   let logo = document.querySelector(".cca");
   let logoimg = document.getElementById("logoImg");
   logoimg.style.height = "150px";
-  logo.style.top = "10%";
+  logo.style.top = "4vh";
   home.style.display = "block";
   about.style.display = "none";
   arhn.style.display = "none";
