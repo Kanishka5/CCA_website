@@ -268,3 +268,55 @@ function myFunction() {
     i = 1;
   }
 }
+
+//cell hover
+$("#core").hover(
+  function() {
+    $("#cell_name").html(
+      "Core Cell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    );
+  },
+  function() {
+    $("#cell_name").html("");
+  }
+);
+
+$("#wdct").hover(
+  function() {
+    $("#cell_name").html("Web, Design & Creative Team");
+  },
+  function() {
+    $("#cell_name").html("");
+  }
+);
+
+$("#robo").hover(
+  function() {
+    $("#cell_name").html(
+      "Robo Cell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    );
+  },
+  function() {
+    $("#cell_name").html("");
+  }
+);
+
+$("#ecell").hover(
+  function() {
+    $("#cell_name").html(
+      "Entrepreneurship Cell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    );
+  },
+  function() {
+    $("#cell_name").html("");
+  }
+);
+
+$("#rndi").hover(
+  function() {
+    $("#cell_name").html("Research & Development Cell&nbsp;&nbsp;&nbsp;");
+  },
+  function() {
+    $("#cell_name").html("");
+  }
+);

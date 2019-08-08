@@ -144,6 +144,16 @@ body{
         width: 17.5vw;
         /* width: 32vh; */
     }
+
+    .cells{
+        position: relative;
+    }
+
+    .cells p{
+        margin:0;
+        margin-bottom:10px;
+    }
+
     .cell_thumbnails{
         position: absolute;
         bottom: 0;
@@ -153,6 +163,15 @@ body{
         align-items: flex-end;
         justify-content: flex-end;
         width: 100vw;
+    }
+
+    .cellTag{
+        position: absolute;
+        bottom: 6vh;
+        background: white;
+        padding: 1rem;
+        left: 0;
+        font-size: 2.5rem
     }
 
     .cell_thumbnails span{
@@ -172,6 +191,59 @@ body{
         height: 37vh;
         background: #e4e4e4;
     }
+
+    figure {
+        /* background: #000 */
+    }
+
+    figure.effect-steve {
+        z-index: auto;
+        overflow: visible;
+        /* background: #000; */
+        /* width: 5vw */
+    }
+    
+    figure.effect-steve:before,
+    figure.effect-steve h2:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        /* background: #000; */
+        content: '';
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+    }
+    
+    figure.effect-steve:before {
+        box-shadow: 0px 0px 30px rgb(235, 81, 118);
+        opacity: 0;
+        background: #b2457cbf;
+    }
+    
+    figure.effect-steve figcaption {
+        z-index: 1;
+    }
+    
+    figure.effect-steve img {
+        opacity: 1;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: perspective(1000px) translate3d(0,0,0);
+        transform: perspective(1000px) translate3d(0,0,0);
+    }
+    
+    figure.effect-steve:hover:before {
+        opacity: 1;
+    }
+    
+    figure.effect-steve:hover img {
+        -webkit-transform: perspective(1000px) translate3d(0,0,21px);
+        transform: perspective(1000px) translate3d(0,0,21px);
+    }
+    
 
     #fullscreenDiv{
         display: none;
@@ -388,7 +460,7 @@ body{
 #about p{
     margin-top: 40px;
     font-family: Avenir;
-    font-size: 20px;
+    font-size: 2.5rem;
 }
 
 .brk-img-double-wide{
