@@ -14,6 +14,54 @@
     <title>WDCT</title>
 </head>
 <body>
+        <script src="js/classie.js"></script>
+    <script src="js/svgLoader.js"></script>
+    <script >function wdct() {
+            loader = new SVGLoader(document.getElementById("loader"), { speedIn: 300 });
+            console.log("in loader");
+            // let home = document.getElementById("home");
+            // let about = document.getElementById("about");
+            // let arhn = document.getElementById("arhn");
+            // let cells = document.getElementById("cells");
+            // let member = document.getElementById("team");
+            // let contact = document.getElementById("contact");
+            // let nav = document.querySelector(".overlay-menu");
+            // let toggleIcon = document.querySelector(".menuIcon");
+            // let logo = document.querySelector(".cca");
+            // let logoimg = document.getElementById("logoImg");
+            // logoimg.style.height = "150px";
+            // logo.style.top = "4vh";
+            // home.style.display = "block";
+            // about.style.display = "none";
+            // arhn.style.display = "none";
+            // cells.style.display = "none";
+            // member.style.display = "none";
+            // contact.style.display = "none";
+            // toggleIcon.className = "menuIcon";
+            // nav.style.transform = "translateX(-100%)";
+            // nav.style.transition = "transform 0.2s ease-out";
+            loader.show();
+            // after some time hide loader
+            setTimeout(function() {
+              loader.hide();
+            }, 1000);
+          }wdct();</script>
+        <!-- path of transition -->
+        <div
+        id="loader"
+        class="pageload-overlay"
+        data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z"
+      >
+        <svg
+          xmlns="https//www.w3.org/2000/svg"
+          width="100%"
+          height="100%"
+          viewBox="0 0 80 60"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <path d="M40,30 c 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 Z" />
+        </svg>
+      </div>
     <div class="landing">
         <div id="back_button">
             <i class="fas fa-arrow-left"></i>

@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(https://image.freepik.com/free-vector/team-software-developers_82574-172.jpg);
+    background-image: url('../img/wdct_cover.png');
     background-repeat: no-repeat;
     background-size: cover;
     /* color: white; */
@@ -42,20 +42,23 @@ body {
     width: max-content;
     margin-left: 10%;
     font-family: 'Avenir';
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 0 1%;
-    background: #eeeeee59;
-    margin-top: 10vh;
+    margin-top: -14vh;
+    color: white;
 }
 
 .cell_details {
-    height: 8vh;
+    font-family: 'Avenir';
+    font-size: 0.9rem;
+    height: 7vh;
     width: 50vw;
     position: absolute;
     bottom: 0;
     padding-left: 2vw;
     left: 10vw;
-    background: #62a8e6;
+    background-image: linear-gradient(to right, #eb5176, #f05e81, #f56a8c, #fa7696, #ff82a1);
+    color: white
 }
 
 
