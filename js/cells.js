@@ -1,36 +1,57 @@
-var dtl = document.getElementsByClassName("cell_details");
+document.getElementById("bod").addEventListener("wheel", anim);
 
-var scene = new ScrollMagic.Scene({
-  triggerElement: "#anim",
-  tweenChanges: true,
-  offset: 200
-});
+function anim() {
+  var tl = new TimelineMax();
+  tl.to("#anim", 1, { width: "80vw" }).to("#anim", 1.5, {
+    overflowY: "scroll",
+    height: "55vh"
+  });
+}
 
-var tl = new TimelineMax();
-var tween1 = TweenMax.to("dtl", 2, { width: "70vw" });
-var tween2 = TweenMax.to("dtl", 2, {
-  height: "90vh",
-  bottom: "-5vh"
-});
-tl.add(tween1).add(tween2);
-scene.setTween(tl);
-// scene.addIndicators({ name: "1 (duration: 0)" });
-// scene.addTo(controller);
+//meber hover anim
+(function() {
+  function init() {
+    var speed = 250,
+      easing = mina.easeinout;
 
-// var lastScrollTop = 0;
-// var tl1 = new TimelineMax();
-// var tl2 = new TimelineMax();
+    [].slice
+      .call(document.querySelectorAll(".membercard > a"))
+      .forEach(function(el) {
+        var s = Snap(el.querySelector("svg")),
+          path = s.select("path"),
+          pathConfig = {
+            from: path.attr("d"),
+            to: el.getAttribute("data-path-hover")
+          };
 
-// $(window).scroll(() => {
-//   var st = $(this).scrollTop();
-//   if (st > lastScrollTop) {
-//     console.log("scroll");
-//     tl1.to(dtl, 2, { width: "70vw" }).to(dtl, 2, {
-//       height: "90vh",
-//       bottom: "-5vh"
+        el.addEventListener("mouseenter", function() {
+          path.animate({ path: pathConfig.to }, speed, easing);
+        });
+
+        el.addEventListener("mouseleave", function() {
+          path.animate({ path: pathConfig.from }, speed, easing);
+        });
+      });
+  }
+
+  init();
+})();
+
+// $(window).on("wheel", function(e) {
+//   var delta = e.originalEvent.deltaY;
+
+//   if (delta > 0) {
+//     var tl = new TimelineMax();
+//     tl.to("#anim", 1, { width: "80vw" }).to("#anim", 1, {
+//       height: "55vh",
+//       overflow: "scroll"
 //     });
 //   } else {
-//     tl2.to(dtl, 2, { height: "8vh", width: "50vw", bottom: 0 });
+//     var tl = new TimelineMax();
+//     tl.to("#anim", 1, {
+//       height: "7vh"
+//     }).to("#anim", 1, { width: "50vw", overflow: "hidden" });
 //   }
-//   lastScrollTop = st;
+
+//   return false;
 // });

@@ -8,6 +8,29 @@
     src: url(../fonts/Avenir\ LT\ 95\ Black.ttf);
 }
 
+/* scrollbar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
 body {
     margin: 0;
 }
@@ -35,7 +58,7 @@ body {
     position: fixed;
     top: 4vh;
     left: 5vh;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .about_cell {
@@ -44,7 +67,7 @@ body {
     font-family: 'Avenir';
     font-size: 2rem;
     padding: 0 1%;
-    margin-top: -14vh;
+    margin-top: -40vh;
     color: white;
 }
 
@@ -58,7 +81,141 @@ body {
     padding-left: 2vw;
     left: 10vw;
     background-image: linear-gradient(to right, #eb5176, #f05e81, #f56a8c, #fa7696, #ff82a1);
-    color: white
+    color: white;
+    overflow:hidden
 }
 
+.cell_details h1{
+    font-weight: 900; 
+}
+
+.cellinfo{
+    font-size: 2.7rem;
+    padding-top: 1vh;
+    padding-right: 7vw;
+}
+
+.about_back h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.about_back h3{
+    font-size: 3rem;
+}
+
+/* members */
+.container {
+    width: 100%;
+}
+#team{
+    display: none;
+}
+.heading {
+    font-family: Avenir-Black;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    text-align: center;
+}
+
+.heading.member{
+    margin-bottom: 80px;
+    margin-top: 144px;
+}
+
+.heading.member h1{
+    font-family: Avenir-Black;
+    font-weight: 900;
+}
+
+.heading.faculty{
+    margin-top: 15vh;
+    margin-bottom: 40px;
+}
+
+.heading.faculty h1{
+    font-weight: 900;
+}
+
+.membercard{
+    font-family: Avenir-Black;
+    height: 256px;
+    width: 168px;
+    background-color: #d8d8d8;
+    margin-bottom: 120px;
+    margin-left: 12px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.membercard figure{
+    position: relative;
+    color: #000000;
+}
+
+.membercard figure img{
+    position: absolute;
+    left:-1.5vw;
+    height: 100%;
+}
+
+.membercard figure svg{
+    position: absolute;
+}
+
+.membercard figure h1{
+    font-family: Avenir,sans-serif;
+    position: absolute;
+    font-size: 1.7rem;
+    bottom: 0;
+    padding-left: 14px;
+    transition:transform 0.8s;
+    font-weight: 600
+}
+
+.membercard figure p{
+    bottom: -46px;
+    padding-left: 14px;
+    position: absolute;
+    transition:transform 0.8s;
+    font-size: 1.2rem;
+}
+
+.membercard figcaption{  
+  
+    position: relative;
+    height: 255px;
+    transition-duration: 0.5s;
+}
+
+.membercard figcaption:hover{
+	transform: translateY(-45px);
+}
+
+.membercard figure svg path{
+    fill: #fff;
+}
+
+#facpara{
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+
+@media screen and (max-width: 480px){
+    .about_cell {
+        width: auto;
+        margin-top: -49vh;
+    }
+    .cell_details{
+        width: 80vw;
+        overflow-y: scroll;
+        height: 55vh
+    }
+}
 

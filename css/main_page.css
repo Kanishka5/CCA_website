@@ -309,6 +309,8 @@ body{
     justify-content: center;
     margin: 2%;
   }
+
+  /* scrollbar */
   
   /* width */
   ::-webkit-scrollbar {
@@ -1262,7 +1264,7 @@ footer {
 
     /* member */
     .membercard figure svg{
-        height: 414px;
+        height:264px;
         width: 80vw;
     }
 
@@ -1278,8 +1280,8 @@ footer {
     }
 
     .membercard{
-        width: 80vw;
-        margin-left: 10vw;
+        width: 68vw;
+        margin-left: 16vw;
     }
 
     .no-gutter > [class*='col-'] {
