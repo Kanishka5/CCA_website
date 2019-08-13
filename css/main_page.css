@@ -378,9 +378,9 @@ body{
     }
   }
   @media screen and (max-width: 768px) {
-      #cells{
+      /* #cells{
           margin-left: 3vw;
-      }
+      } */
     #cells .text{
         position: unset;
         width: auto;
@@ -400,8 +400,22 @@ body{
         position: unset;
       display: block;
       align-items: center;
+      margin-left: 0;
       justify-content: center;
-      margin-left: 12vw;
+      width: auto;
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+    }
+    #cells img{
+        width: 70vw;
+        margin-left: 15vw;
+    }
+
+    .cellBack{
+        display: none;
+    }
+    .cellTag{
+        left: 7vw;
     }
     .core{
         margin-top: 15%;
@@ -532,10 +546,12 @@ body{
   @media screen and (max-width: 480px) {
     .brk-img-double-wide__container:first-child{
         overflow: hidden;
+        width:100%
     }
 
     .brk-img-double-wide__container:last-child{
         overflow: hidden;
+        left: 18vw;
     }
         .brk-img-double-wide:hover .brk-img-double-wide__container:first-child{
         z-index:1;
@@ -561,6 +577,7 @@ body{
     }
     .brk-img-double-wide{
         margin-left:0;
+        padding-bottom: 0
     }
     #about img{
         height: auto;
@@ -631,12 +648,16 @@ body{
     #arhn img{
         height: auto;
         width: 342px;
+        top: 6vh;
     }
     #arhn{
         margin-top: 0;
     }
     #arhn p{
         font-size: 21px;
+    }
+    #arhn .brk-img-double-wide__container:first-child {
+        margin-left: 14vw;
     }
 }
 
@@ -688,6 +709,7 @@ footer {
     background-color: #9584b4;
     color: white;
     text-align: center;
+    padding-bottom: 8vh
  }
 
  .egg{
@@ -1232,7 +1254,7 @@ footer {
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 480px){
     /* logo */
     .arhn,.cca{
         display: none;
@@ -1306,4 +1328,32 @@ footer {
         font-weight: 900;
     }
 
+    .inner_home {
+        display: block;
+        margin-top: 15vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: auto;
+        color: #d8d8d8;
+    }
+    #home h1 {
+        font-family: Avenir-Black,sans-serif;
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: white;
+    }
+    #home p {
+        font-family: Avenir;
+        font-size: 2rem;
+        color: white;
+    }
+    #icon{
+        display: none;
+    }
+    #arhn .container {
+        margin-top:14vh
+    }
+    #contact {
+        background-position: left
+    }
 }
