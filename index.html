@@ -28,7 +28,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
@@ -40,6 +44,11 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     /> -->
+    <script>
+        $(window).load(function(){
+            $('#overlay').fadeOut();
+        });
+    </script>
 
 </head>
 
@@ -48,42 +57,43 @@
     <script src="js/classie.js"></script>
     <script src="js/svgLoader.js"></script>
 
-    <div class="loader-page">
-            <div class="loader-container">
-              <div class="loader-counter">
+    <!-- loader -->
+    <div id="overlay" class="loader-page">
+        <div class="loader-container">
+            <div class="loader-counter">
                 <p>0</p>
-              </div>
-                <div class="loader-text">
-                    <b>Loading..</b>
-                </div>
             </div>
-        </div> 
+            <div class="loader-text">
+                <b>Loading..</b>
+            </div>
+        </div>
+    </div>
 
-
-     <script>
-            function loader() {
-                    const words=["Zero","One","two","Three","Four","five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Ninteen","Twenty","twentyone","Twentytwo","Twenty three","Twenty four","Twenty five","Twenty six","Twenty seven","Twenty eight","Twenty nine","Thirty","Thirty one","Thirty two","Thirty three","Thirty four","Thirty five","Thirty six","Thirty seven","Thirty eight","Thirty nine","Foutrty","Fourty one","Fourty two","Fourty three","Fourty four","Fourty five","Fourty six","Fourty seven","Fourty eight","Fourty nine","Fifty","Fifty one","Fifty two","Fifty three","Fifty four","Fifty five","Fifty six","Fifty seven","Fifty eight","Fifty nine","Sixty","Sixty one","Sixty two","Sixty three","Sixty four","Sixty five","Sixty six","Sixty seven","Sixty eight","Sixty nine","Seventy","Seventy one","Seventy two","Seventy three","Seventy four","Seventy five","Seventy six","Seventy seven","Seventy eight","Seventy nine","Eighty","Eighty one","Eighty two","Eighty three","Eighty four","Eighty five","Eighty six","Eighty seven","Eighty eight","Eighty nine","Ninety","Ninety one","Ninety two","Ninety three","Ninety four","Ninety five","Ninety six","Ninety seven","Ninety eight","Ninety nine","Hundred"];
-                    let text = document.querySelector('.loader-text')
-                    let loaderPage = document.querySelector('.loader-page');
-                    let counter = document.querySelector('.loader-counter');
-                    let fill = document.querySelector('.loader-fill');
-                    let amount = 10;
-                    let interval = setInterval(loop, 70);
-                    function loop() {
-                        if (amount >= 100) {
-                        clearInterval(interval);
-                        loaderPage.style.visibility = 'hidden';
-                        loaderPage.style.opacity = '0'
-                        }else {
-                        amount++;
-                        counter.textContent = amount ;
-                        text.textContent = words[amount];
-                        }
-                    }
+    <script>
+        function loader() {
+            const words = ["Zero", "One", "two", "Three", "Four", "five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Ninteen", "Twenty", "twentyone", "Twentytwo", "Twenty three", "Twenty four", "Twenty five", "Twenty six", "Twenty seven", "Twenty eight", "Twenty nine", "Thirty", "Thirty one", "Thirty two", "Thirty three", "Thirty four", "Thirty five", "Thirty six", "Thirty seven", "Thirty eight", "Thirty nine", "Foutrty", "Fourty one", "Fourty two", "Fourty three", "Fourty four", "Fourty five", "Fourty six", "Fourty seven", "Fourty eight", "Fourty nine", "Fifty", "Fifty one", "Fifty two", "Fifty three", "Fifty four", "Fifty five", "Fifty six", "Fifty seven", "Fifty eight", "Fifty nine", "Sixty", "Sixty one", "Sixty two", "Sixty three", "Sixty four", "Sixty five", "Sixty six", "Sixty seven", "Sixty eight", "Sixty nine", "Seventy", "Seventy one", "Seventy two", "Seventy three", "Seventy four", "Seventy five", "Seventy six", "Seventy seven", "Seventy eight", "Seventy nine", "Eighty", "Eighty one", "Eighty two", "Eighty three", "Eighty four", "Eighty five", "Eighty six", "Eighty seven", "Eighty eight", "Eighty nine", "Ninety", "Ninety one", "Ninety two", "Ninety three", "Ninety four", "Ninety five", "Ninety six", "Ninety seven", "Ninety eight", "Ninety nine", "Hundred"];
+            let text = document.querySelector('.loader-text')
+            let loaderPage = document.querySelector('.loader-page');
+            let counter = document.querySelector('.loader-counter');
+            let fill = document.querySelector('.loader-fill');
+            let amount = 10;
+            let interval = setInterval(loop, 70);
+            function loop() {
+                if (amount >= 100) {
+                    clearInterval(interval);
+                    loaderPage.style.visibility = 'hidden';
+                    loaderPage.style.opacity = '0'
+                } else {
+                    amount++;
+                    counter.textContent = amount;
+                    text.textContent = words[amount];
+                }
             }
+        }
             loader();
-    </script> 
-  
+    </script>
+
+
 
     <!-- path of transition -->
     <div id="loader" class="pageload-overlay"
@@ -390,11 +400,11 @@
             </div>
             <div class="cells" id="ecell">
                 <a href="/ecell.html">
-                <p>
+                    <p>
                         <figure class="effect-steve">
                             <img src="./img/cells/ecell.png" alt="ecell" />
                         </figure>
-                    </a>
+                </a>
                 </p>
                 <h1 class="cellTag">E cell</h1>
             </div>
