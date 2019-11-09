@@ -1161,7 +1161,7 @@ $('#home').imagesLoaded({ background: true })
                 } 
                 else if(amount > 75 && loaded == 0)
                 {
-                    $('#bod').imagesLoaded().always( function( instance ) {
+                    $('#bod').imagesLoaded({background: '.item'}).always( function( instance ) {
                         console.log("loaded");
                         loaded = 1;
                     });
