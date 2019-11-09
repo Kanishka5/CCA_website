@@ -47,6 +47,7 @@ body {
     background-size: cover;
     /* color: white; */
     z-index: -5;
+    overflow-y: scroll;
 }
 
 /* 'https://image.freepik.com/free-vector/web-developers-team-work-online-startup-group_93633-58.jpg' */
@@ -214,7 +215,7 @@ body {
     }
     .cell_details{
         width: 80vw;
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         height: 55vh
     }
 }

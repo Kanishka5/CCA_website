@@ -15,7 +15,7 @@ body{
 /* loader */
 
 .loader-page {
-    background-color: #333;
+    background-color: #d9b5f5;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -47,9 +47,9 @@ body{
 
   .loader-text{
     z-index:55;
-    color:white;
+    color:#44363e;
     font-size:40px;
-    background-color:black;
+    background-color:#E2E8C0;
     width:300px;
     text-align:center;
     font-family:Avenir;
@@ -59,7 +59,7 @@ body{
     position: absolute;
     font-size: 200px;
     font-family: 'Avenir-Black' ;
-    color: steelblue;
+    color: #44363e;
     z-index: 9;
   }
 
@@ -162,6 +162,7 @@ body{
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-end;
+        overflow: hidden;
         width: 100vw;
     }
 
@@ -602,6 +603,7 @@ body{
     width: 99vw;
     position: absolute;
     top: 3vh;
+    z-index: -1;
 }
 
 #arhn .container {
@@ -707,11 +709,11 @@ footer {
     width: 100vw;
     height: 56px;
     font-size: 16px;
-    padding-top: 18px;
+    /* padding-top: 18px; */
     background-color: #9584b4;
     color: white;
     text-align: center;
-    padding-bottom: 8vh
+    /* padding-bottom: 8vh */
  }
 
  .egg{
@@ -1128,7 +1130,7 @@ footer {
 }
 
 .cca img{
-    height: 150px;
+    height: 15vh;
     border-radius:16%
 }
 
@@ -1215,7 +1217,7 @@ footer {
 }
 
 .pageload-overlay::after {
-	background-color: #6cc88a;
+	background-color: #6853BF;
 	-webkit-transform: translateX(-20px);
 	transform: translateX(-20px);
 	-webkit-animation: moveRight 0.6s linear infinite alternate;
@@ -1223,7 +1225,7 @@ footer {
 }
 
 .pageload-overlay::before {
-	background-color: #4fc3f7;
+	background-color: #D4C1EC;
 	-webkit-transform: translateX(20px);
 	transform: translateX(20px);
 	-webkit-animation: moveLeft 0.6s linear infinite alternate;

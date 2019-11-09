@@ -3,8 +3,10 @@ document.getElementById("bod").addEventListener("wheel", anim);
 function anim() {
   var tl = new TimelineMax();
   tl.to("#anim", 1, { width: "80vw" }).to("#anim", 1.5, {
-    overflowY: "scroll",
-    height: "55vh"
+    // overflowY: "scroll",
+    height: "auto",
+    top: "45vh",
+    bottom: "auto"
   });
 }
 
