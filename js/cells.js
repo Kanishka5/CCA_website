@@ -1,4 +1,7 @@
-document.getElementById("bod").addEventListener("wheel", anim);
+if(screen.width > 600)
+{
+    document.getElementById("bod").addEventListener("wheel", anim);
+}
 
 function anim() {
   var tl = new TimelineMax();

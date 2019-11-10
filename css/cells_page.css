@@ -129,7 +129,7 @@ body {
     margin-top: 144px;
 }
 
-.heading.member h1{
+.heading.member h1{-49vh
     font-family: Avenir-Black;
     font-weight: 900;
 }
@@ -163,6 +163,18 @@ body {
     position: absolute;
     left:-1.5vw;
     height: 100%;
+}
+
+@media screen and (max-width: 480px)
+{
+    .membercard figure img{
+        right:-15vw;
+        left: auto;
+    }
+
+    #kanishka {
+        left: -13vw !important;
+    }
 }
 
 .membercard figure svg{
@@ -211,12 +223,25 @@ body {
 @media screen and (max-width: 480px){
     .about_cell {
         width: auto;
-        margin-top: -49vh;
+        margin-top: -50vh;
     }
     .cell_details{
-        width: 80vw;
-        /* overflow-y: scroll; */
-        height: 55vh
+        width: 90vw;
+        height: auto;
+        bottom: auto;
+        padding-left: 5vw;
+        left: 5vw;
+        top: 45vh;
+    }
+
+    .landing{
+        overflow-y: auto;
+        width: auto;
+    }
+
+    .membercard{
+        width: 47vw;
+        margin-left: 14vw;
     }
 }
 

@@ -25,6 +25,7 @@ body{
     right: 0;
     bottom: 0;
     transition: all .5s ease-out;
+    overflow: hidden;
   }
   .loader-container {
     /* border: 1px solid steelblue; */
@@ -185,6 +186,13 @@ body{
         font-weight: 600
     }
 
+    @media screen and (max-width: 480px)
+    {
+        .cell_thumbnails span{
+            display: none;
+        }
+    }
+
     .cellBack{
         position: absolute;
         bottom: 0;
@@ -238,6 +246,14 @@ body{
     
     figure.effect-steve:hover:before {
         opacity: 1;
+    }
+
+    @media screen and (max-width : 400px)
+    {
+        figure.effect-steve:hover:before {
+            width:80vw;
+            left: 10vw;
+        }
     }
     
     figure.effect-steve:hover img {
@@ -790,7 +806,7 @@ footer {
 }
 
 .heading.faculty{
-    margin-top: 211px;
+    margin-top: 5vh;
     margin-bottom: 40px;
 }
 
@@ -1068,7 +1084,7 @@ footer {
     }
   
     .overlay-menu {
-    background: lightblue;
+    background: #ae96d6;
     color: rgb(13, 26, 38);
     display: flex;
     align-items: center;
@@ -1091,6 +1107,7 @@ footer {
   }
   
   .overlay-menu li a {
+    color: black;
     display: block;
     font-size: 1.8em;
     letter-spacing: 4px;
