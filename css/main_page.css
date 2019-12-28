@@ -13,7 +13,6 @@ body{
 }
 
 /* loader */
-
 .loader-page {
     background-color: #d9b5f5;
     position: fixed;
@@ -99,7 +98,7 @@ body{
   }
 }
 
-
+/* about cca on home page */
 .inner_home{
     display: block;
     margin-top:22vh;
@@ -478,7 +477,7 @@ body{
   }
 
 
-/* about */
+/* about section */
 #about{
     display: none;
     margin-top: 18vh;
@@ -609,7 +608,7 @@ body{
 
 
 
-/* aarohan */
+/* aarohan section */
 #arhn{
     margin-top: 18vh;
     display: none;
@@ -685,12 +684,12 @@ body{
 
 
 
-/* cells */
+/* cells section */
 #cells{
     display: none;
 }
 
-/* contact */
+/* contact section */
 #contact{
   z-index: -2;
     background-image: url(../img/contact1.png);
@@ -779,7 +778,7 @@ footer {
     bottom: -45px;
  } */
 
-/* members */
+/* members section */
 #team{
     display: none;
 }

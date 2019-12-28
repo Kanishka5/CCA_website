@@ -35,6 +35,7 @@ body {
     margin: 0;
 }
 
+/* this is the background page */
 .landing {
     position: fixed;
     width: 100vw;
@@ -72,6 +73,7 @@ body {
     color: white;
 }
 
+/* the main content box */
 .cell_details {
     font-family: 'Avenir';
     font-size: 0.9rem;
@@ -129,7 +131,8 @@ body {
     margin-top: 144px;
 }
 
-.heading.member h1{-49vh
+.heading.member h1{
+    
     font-family: Avenir-Black;
     font-weight: 900;
 }
