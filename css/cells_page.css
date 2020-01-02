@@ -1,54 +1,53 @@
 @font-face {
-	font-family: 'Avenir';
-	src: url(../fonts/AvenirLTStd-Book.otf);
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLTStd-Book.otf);
 }
 
-@font-face{
-    font-family: 'Avenir-Black';
-    src: url(../fonts/Avenir\ LT\ 95\ Black.ttf);
+@font-face {
+  font-family: "Avenir-Black";
+  src: url(../fonts/Avenir\LT\95\Black.ttf);
 }
 
 /* scrollbar */
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-    width: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  width: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /* this is the background page */
 .landing {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url('../img/wdct_cover.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* color: white; */
-    z-index: -5;
-    overflow-y: scroll;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/wdct_cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: white; */
+  z-index: -5;
+  overflow-y: scroll;
 }
 
 /* 'https://image.freepik.com/free-vector/web-developers-team-work-online-startup-group_93633-58.jpg' */
@@ -57,194 +56,196 @@ body {
 /* https://www.freepik.com/premium-vector/programmer-character-working-laptop-teamwork_4362195.htm */
 
 #back_button {
-    position: fixed;
-    top: 4vh;
-    left: 5vh;
-    font-size: 2rem;
+  position: fixed;
+  top: 4vh;
+  left: 5vh;
+  font-size: 2rem;
 }
 
 .about_cell {
-    width: max-content;
-    margin-left: 10%;
-    font-family: 'Avenir';
-    font-size: 2rem;
-    padding: 0 1%;
-    margin-top: -40vh;
-    color: white;
+  width: max-content;
+  margin-left: 10%;
+  font-family: "Avenir";
+  font-size: 2rem;
+  padding: 0 1%;
+  margin-top: -40vh;
+  color: white;
 }
 
 /* the main content box */
 .cell_details {
-    font-family: 'Avenir';
-    font-size: 0.9rem;
-    height: 7vh;
-    width: 50vw;
-    position: absolute;
-    bottom: 0;
-    padding-left: 2vw;
-    left: 10vw;
-    background-image: linear-gradient(to right, #eb5176, #f05e81, #f56a8c, #fa7696, #ff82a1);
-    color: white;
-    overflow:hidden
+  font-family: "Avenir";
+  font-size: 0.9rem;
+  height: 7vh;
+  width: 50vw;
+  position: absolute;
+  bottom: 0;
+  padding-left: 2vw;
+  left: 10vw;
+  background-image: linear-gradient(
+    to right,
+    #eb5176,
+    #f05e81,
+    #f56a8c,
+    #fa7696,
+    #ff82a1
+  );
+  color: white;
+  overflow: hidden;
 }
 
-.cell_details h1{
-    font-weight: 900; 
+.cell_details h1 {
+  font-weight: 900;
 }
 
-.cellinfo{
-    font-size: 2.7rem;
-    padding-top: 1vh;
-    padding-right: 7vw;
+.cellinfo {
+  font-size: 2.7rem;
+  padding-top: 1vh;
+  padding-right: 7vw;
 }
 
-.about_back h1{
-    font-size: 4rem;
-    font-weight: 900;
+.about_back h1 {
+  font-size: 4rem;
+  font-weight: 900;
 }
 
-.about_back h3{
-    font-size: 3rem;
+.about_back h3 {
+  font-size: 3rem;
 }
 
 /* members */
 .container {
-    width: 100%;
+  width: 100%;
 }
-#team{
-    display: none;
+#team {
+  display: none;
 }
 .heading {
-    font-family: Avenir-Black;
-    font-size: 42px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
-    text-align: center;
+  font-family: Avenir-Black;
+  font-size: 42px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: center;
 }
 
-.heading.member{
-    margin-bottom: 80px;
-    margin-top: 144px;
+.heading.member {
+  margin-bottom: 80px;
+  margin-top: 144px;
 }
 
-.heading.member h1{
-    
-    font-family: Avenir-Black;
-    font-weight: 900;
+.heading.member h1 {
+  font-family: Avenir-Black;
+  font-weight: 900;
 }
 
-.heading.faculty{
-    margin-top: 15vh;
-    margin-bottom: 40px;
+.heading.faculty {
+  margin-top: 15vh;
+  margin-bottom: 40px;
 }
 
-.heading.faculty h1{
-    font-weight: 900;
+.heading.faculty h1 {
+  font-weight: 900;
 }
 
-.membercard{
-    font-family: Avenir-Black;
-    height: 256px;
-    width: 168px;
-    background-color: #d8d8d8;
-    margin-bottom: 120px;
-    margin-left: 12px;
-    overflow: hidden;
-    border-radius: 8px;
+.membercard {
+  font-family: Avenir-Black;
+  height: 256px;
+  width: 168px;
+  background-color: #d8d8d8;
+  margin-bottom: 120px;
+  margin-left: 12px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-.membercard figure{
-    position: relative;
-    color: #000000;
+.membercard figure {
+  position: relative;
+  color: #000000;
 }
 
-.membercard figure img{
-    position: absolute;
-    left:-1.5vw;
-    height: 100%;
+.membercard figure img {
+  position: absolute;
+  left: -1.5vw;
+  height: 100%;
 }
 
-@media screen and (max-width: 480px)
-{
-    .membercard figure img{
-        right:-15vw;
-        left: auto;
-    }
+@media screen and (max-width: 480px) {
+  .membercard figure img {
+    right: -15vw;
+    left: auto;
+  }
 
-    #kanishka {
-        left: -13vw !important;
-    }
+  #kanishka {
+    left: -13vw !important;
+  }
 }
 
-.membercard figure svg{
-    position: absolute;
+.membercard figure svg {
+  position: absolute;
 }
 
-.membercard figure h1{
-    font-family: Avenir,sans-serif;
-    position: absolute;
-    font-size: 1.7rem;
-    bottom: 0;
-    padding-left: 14px;
-    transition:transform 0.8s;
-    font-weight: 600
+.membercard figure h1 {
+  font-family: Avenir, sans-serif;
+  position: absolute;
+  font-size: 1.7rem;
+  bottom: 0;
+  padding-left: 14px;
+  transition: transform 0.8s;
+  font-weight: 600;
 }
 
-.membercard figure p{
-    bottom: -46px;
-    padding-left: 14px;
-    position: absolute;
-    transition:transform 0.8s;
-    font-size: 1.2rem;
+.membercard figure p {
+  bottom: -46px;
+  padding-left: 14px;
+  position: absolute;
+  transition: transform 0.8s;
+  font-size: 1.2rem;
 }
 
-.membercard figcaption{  
-  
-    position: relative;
-    height: 255px;
-    transition-duration: 0.5s;
+.membercard figcaption {
+  position: relative;
+  height: 255px;
+  transition-duration: 0.5s;
 }
 
-.membercard figcaption:hover{
-	transform: translateY(-45px);
+.membercard figcaption:hover {
+  transform: translateY(-45px);
 }
 
-.membercard figure svg path{
-    fill: #fff;
+.membercard figure svg path {
+  fill: #fff;
 }
 
-#facpara{
-    font-size: 20px;
-    margin-bottom: 80px;
+#facpara {
+  font-size: 20px;
+  margin-bottom: 80px;
 }
 
+@media screen and (max-width: 480px) {
+  .about_cell {
+    width: auto;
+    margin-top: -50vh;
+  }
+  .cell_details {
+    width: 90vw;
+    height: auto;
+    bottom: auto;
+    padding-left: 5vw;
+    left: 5vw;
+    top: 45vh;
+  }
 
-@media screen and (max-width: 480px){
-    .about_cell {
-        width: auto;
-        margin-top: -50vh;
-    }
-    .cell_details{
-        width: 90vw;
-        height: auto;
-        bottom: auto;
-        padding-left: 5vw;
-        left: 5vw;
-        top: 45vh;
-    }
+  .landing {
+    overflow-y: auto;
+    width: auto;
+  }
 
-    .landing{
-        overflow-y: auto;
-        width: auto;
-    }
-
-    .membercard{
-        width: 47vw;
-        margin-left: 14vw;
-    }
+  .membercard {
+    width: 47vw;
+    margin-left: 14vw;
+  }
 }
-

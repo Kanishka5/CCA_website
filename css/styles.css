@@ -1,20 +1,19 @@
 body {
-    background-color: #020122;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  canvas {
-    /* position: absolute; */
-  }
-  
-  /* used in game.html */
-  #bee-runner {
-    /* border: 2px solid white; */
-    /* width: 288px; */
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-  }
-  
+  background-color: #020122;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  /* position: absolute; */
+}
+
+/* used in game.html */
+#bee-runner {
+  /* border: 2px solid white; */
+  /* width: 288px; */
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
