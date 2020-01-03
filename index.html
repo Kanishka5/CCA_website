@@ -48,8 +48,8 @@
 
 <body id="bod">
     <!-- onclick page change -->
-    <script src="js/classie.js"></script>
-    <script src="js/svgLoader.js"></script>
+    <script src="js/min/classie.min.js"></script>
+    <script src="js/min/svgLoader.min.js"></script>
 
     <!-- loader -->
     <div id="overlay" class="loader-page">
@@ -131,22 +131,22 @@
         <p><a href="#" onclick="contact()"> CONTACT US </a></p>
         <div class="icons">
             <p>
-                <a href="https://www.facebook.com/arhn.nitd/">
+                <a target='_blank' href="https://www.facebook.com/arhn.nitd/">
                     <i class="fa fa-facebook-square" style="font-size:20px;transform: rotate(90deg)"></i>
                 </a>
             </p>
             <p>
-                <a href="https://www.youtube.com/user/arhnNITD">
+                <a target='_blank' href="https://www.youtube.com/user/arhnNITD">
                     <i class="fa fa-youtube" style="font-size:20px;transform: rotate(90deg)"></i>
                 </a>
             </p>
             <p>
-                <a href="https://www.instagram.com/arhn.nitd/">
+                <a target='_blank' href="https://www.instagram.com/arhn.nitd/">
                     <i class="fa fa-instagram" style="font-size:20px;transform: rotate(90deg)"></i>
                 </a>
             </p>
             <p>
-                <a href="https://twitter.com/aarohan_nitdgp">
+                <a target='_blank' href="https://twitter.com/aarohan_nitdgp">
                     <i class="fa fa-twitter" style="font-size:20px;transform: rotate(90deg)"></i>
                 </a>
             </p>
@@ -267,71 +267,6 @@ $('#home').imagesLoaded({ background: true })
     </div>
 
     <!-- cells -->
-    <!-- <script type="text/javascript">
-      function Slide() {
-        console.log(1);
-        var logo = document.getElementById("fullscreenDiv");
-        TweenLite.to(logo, 0.7, {
-          ease: Power1.easeOut,
-          right: "0",
-          display: "block"
-        });
-
-        var logo2 = document.getElementById("middle");
-        TweenLite.to(logo2, 0.7, {
-          ease: Power1.easeOut,
-          right: "0%"
-        });
-      }
-
-      function SlideBack() {
-        var logo = document.getElementById("fullscreenDiv");
-        TweenLite.to(logo, 0.7, {
-          ease: Power1.easeIn,
-          right: "-100%"
-        });
-        var logo2 = document.getElementById("middle");
-        TweenLite.to(logo2, 0.7, {
-          ease: Power1.easeIn,
-          right: "-100%",
-          display: "none"
-          //backgroundColor: "black",
-          // borderBottomColor: "#90e500",
-          // color: "white"
-        });
-      }
-
-      function setCore() {
-        console.log(1);
-        text.innerHTML = "<h1>Core Cell</h1>";
-        Slide();
-      }
-
-      function setEcell() {
-        var text = document.getElementById("text");
-        text.innerHTML = "<h1>E Cell</h1>";
-        Slide();
-      }
-
-      function setRobo() {
-        var text = document.getElementById("text");
-        text.innerHTML = "<h1>Robo Cell</h1>";
-        Slide();
-      }
-
-      function setRDI() {
-        var text = document.getElementById("text");
-        text.innerHTML = "<h1>RD&I Cell</h1>";
-        Slide();
-      }
-
-      function setWDCT() {
-        var text = document.getElementById("text");
-        text.innerHTML = "<h1>WDCT</h1>";
-        Slide();
-      }
-    </script> -->
-
     <div id="cells">
         <div class="text">
             <h1>Our Cells</h1>
@@ -398,26 +333,6 @@ $('#home').imagesLoaded({ background: true })
             </div>
         </div>
     </div>
-
-    <!-- <div id="fullscreenDiv" class="fullscreen">
-      <div class="fullscreen middle" id="middle">
-        <div class="contain">
-          <div class="navpanel">
-            <button class="back" onclick="SlideBack()">
-              <img
-                src="C:/Users/Swarnendu/Desktop/Sidenav/back.png"
-                id="backbutton"
-                alt="Back Button"
-              />
-            </button>
-          </div>
-          <div class="content">
-            <p ref="text" id="text">This is the content div.</p>
-            <img src="C:/Users/Swarnendu/Desktop/bg2.jpg" alt="Image" />
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- members -->
     <div id="team">
@@ -1141,7 +1056,7 @@ $('#home').imagesLoaded({ background: true })
     </div>
 
 
-    <script src="js/members.js"></script>
+    <script src="js/min/members.min.js"></script>
 </body>
 <script>
     function loader() {
@@ -1162,7 +1077,7 @@ $('#home').imagesLoaded({ background: true })
             else if (amount > 75 && loaded == 0) {
 
                 $('#home').imagesLoaded({ background: true }).always(function (instance) {
-                    console.log("loaded");
+                    // console.log("loaded");
                     loaded = 1;
                 })
                 // loaded = 1;

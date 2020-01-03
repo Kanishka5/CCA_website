@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Avenir-Black";
-  src: url(../fonts/Avenir\LT\95\Black.ttf);
+  src: url(../fonts/Avenir_Black.ttf);
 }
 
 body {
@@ -193,10 +193,6 @@ body {
   width: 100vw;
   height: 37vh;
   background: #e4e4e4;
-}
-
-figure {
-  /* background: #000 */
 }
 
 figure.effect-steve {

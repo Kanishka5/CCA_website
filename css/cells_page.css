@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Avenir-Black";
-  src: url(../fonts/Avenir\LT\95\Black.ttf);
+  src: url(../fonts/Avenir_Black.ttf);
 }
 
 /* scrollbar */
@@ -49,11 +49,6 @@ body {
   z-index: -5;
   overflow-y: scroll;
 }
-
-/* 'https://image.freepik.com/free-vector/web-developers-team-work-online-startup-group_93633-58.jpg' */
-/* https://image.freepik.com/free-photo/colleagues-giving-fist-bump_53876-64857.jpg */
-/* https://image.freepik.com/free-vector/team-software-developers_82574-172.jpg */
-/* https://www.freepik.com/premium-vector/programmer-character-working-laptop-teamwork_4362195.htm */
 
 #back_button {
   position: fixed;
